@@ -1,0 +1,52 @@
+	• CREATE Table
+		○ Full General Syntax;
+			▪ CREATE TABLE table_name (
+			▪ Column_name TYPE column_constraint,
+			▪ Column_name TYPE column_constraint,
+			▪ Table_constaint table_constraint )
+			▪ INHERITS existing_table_name
+		○ Common Simple Syntax
+			▪ CREATE TABLE table_name (
+			▪ Column_nam TYPE column_constaint,
+			▪ Column_name TYPE column_constraint,);
+	• INSERT allows you to add in rows to a table
+		○ Syntax:
+			▪ Insert INTO table (column1, column2, …)
+			▪ VALUES
+				• (value1, value2,…),
+				• (value1, value2,…),…;
+	• UPDATE
+		○ Allows for the changing of values of columns in a table
+			▪ Syntax
+				• UPDATE table
+				• SET column1 = value1,
+				• Column2 = value2
+				• WHERE condition;
+	• DELETE
+		○ Removes rows from a table
+			▪ Syntax (example)
+				• DELETE FROM table
+				• WHERE row_id = 1
+			▪ Another example
+				• DELETE FROM TableA
+				• USING TableB
+				• WHERE TableA.id = TableB.id
+	• ALTER Table
+		○ Allows for changes to an existing structure, such as:
+			▪ Adding, dropping, or renaming columns
+			▪ Changing a columns data type
+			▪ Set DEFAULT values for a column
+			▪ Add CHECK constraints
+			▪ Rename table
+		○ General Syntax
+			▪ ALTER TABLE table_name action
+			▪ Example
+				• ALTER TABLE table_name
+				• ADD COLUMN new_col TYPE
+	• DROP Table
+		○ Allows for the complete removal of a column in a table
+			▪ In PostgreSQL this will also automatically remove all of its indexes and constraints involving the column
+			▪ However, it will not remove columns used in views, triggers, or stored procedures without the additional CASCADE clause
+		○ Syntax
+			▪ ALTER Table table
+DROP COLUMN column_name

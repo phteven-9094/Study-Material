@@ -1,0 +1,64 @@
+	• Helpful Links
+		○ SQL JOINS Explained with Venn Diagrams
+            http://blog.codinghorror.com/a-visual-explanation-of-sql-joins/
+		○ SQL JOIN Examples
+            http://www.sql-join.com/
+		○ Wikipedia Page on SQL Joins
+            https://en.wikipedia.org/wiki/Join_(SQL)
+
+
+
+	• AS Statement
+		○ Allows us to create an "alias" for a column or result
+		○ Example Syntax
+			▪ SELECT column AS new_name FROM table
+		○ The AS operator gets executed at the very end of a query, meaning that we cannot use the ALIAS inside a WHERE operator.
+	• INNER JOIN
+		○ Will result with the set of records that match in both tables
+		○ Syntax
+			▪ SELECT * FROM TableA
+			▪ INNER JOIN TableB
+			▪ ON TableA.col_match = TableB.col_match
+		○ Example
+			▪ SELECT * FROM Registrations
+			▪ INNER JOIN Logins
+			▪ ON Registrations.name = Logins.name
+		○ Can get rid of duplication by specifying what you want grabbed
+			▪ SELECT reg_id, Logins,name, log_id
+			▪ FROM Registrations
+			▪ INNER JOIN Logins
+			▪ ON Registrations.name = Logins.name
+	• FULL OUTER JOIN
+		○ Will result with the set of records that are in both tables (IE everything)
+		○ Syntax:
+			▪ SELECT * FROM TableA
+			▪ FULL OUTER JOIN TableB
+			▪ ON TableA.col_match = TableB.col_match
+	• FULL OUTER JOIN with WHERE
+		○ Can be used to find rows that are unique to either table
+		○ Example
+			▪ SELECT * FROM Registrations FULL OUTER JOIN LOGINS
+			▪ ON Registrations.name = Logins.name
+			▪ WHERE Registrations.reg_id IS null OR
+			▪ Logins.log_id IS null
+	• LEFT OUTER JOIN
+		○ Results in the set of records that are in the left table, if there is no match with the right table, the results are null
+		○ Syntax
+			▪ SELECT * FROM TableA
+			▪ LEFT OUTER JOIN TableB
+			▪ ON TableA.col_match = TableB.col_match
+		○ If you want to find everything that's in TableA, but not found in TableB, you can use a WHERE
+			▪ SELECT * FROM TableA
+			▪ LEFT OUTER JOIN TableB
+			▪ ON TableA.col_match = TableB.col_match
+			▪ WHERE TableB.id IS null
+	• RIGHT JOIN
+		○ Essentially the same as a LEFT JOIN except the tables are switched.
+		○ It would be the same as switching the table order in a LEFT OUTER JOIN.
+	• UNION
+		○ Used to combine the result-set of two or more SELECT statements
+			▪ Basically serves to directly concatenate two results together, essentially "pasting" them together
+		○ Syntax
+			▪ SELECT column_name(s) FROM table1
+			▪ UNION
+			▪ SELECT column_name(s) FROM table2;

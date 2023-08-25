@@ -1,0 +1,33 @@
+	• GROUP BY will allow us to aggregate data and apply function to better understand how data is distributed per category
+	• Aggregation Functions
+		○ The main idea behind an aggregate function is to take multiple inputs and return a single output.
+		○ Most common Aggregate Functions
+			▪ AVG() - returns average value
+			▪ COUNT() - returns number of values
+			▪ MAX() - returns maximum value
+			▪ MIN() - returns minimum value
+			▪ SUM() - returns the sum of all values
+		○ Happen only in the SELECT clause or the HAVING clause
+		○ You can use ROUND() with AVG() to specify precision after the decimal
+			▪ To use Round, the syntax is similar to:
+				• SELECT ROUND(AVG(replacement_cost), 2) where the 2 is the decimal it rounds to
+	• GROUP BY
+		○ Allows us to aggregate columns per some category
+		○ We need to choose a categorical column
+			▪ IE like key-values where you group by key
+		○ Can be combined with the aggregation functions mentioned above
+			▪ For example
+				• SELECT category_col, AGG(data_col)
+				• FROM table
+				• GROUP BY category_col
+		○ Must appear right after a FROM or WHERE statement
+		○ In the SELECT statement, columns must either have an aggregate function or be in the GROUP BY Call
+	• HAVING
+		○ Allows us to filter after an aggregation has already taken place (after a GROUP BY call)
+		○ You cannot use WHERE to filter based off of aggregate results because those happen after a WHERE clause is done
+		○ Example
+			▪ SELECT company, SUM(sales)
+			▪ FROM finance_table
+			▪ WHERE company != 'Google'
+			▪ GROUP BY company
+			▪ HAVING SUM(sales) > 1000

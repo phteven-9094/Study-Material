@@ -1,0 +1,82 @@
+	• SELECT statement
+		○ Allows us to retrieve info from a table
+		○ Syntax:
+			▪ SELECT column_name FROM table_name
+			▪ Can select multiple columns by separating them by commas
+			• * = "All"
+	• SELECT DISTINCT
+		○ Sometimes a table contains a column that has duplicate values, and you may find yourself in a situation where you only want to list the unique/distinct values.
+		○ The DISTINCT keyword can be used to return only the distinct values in a column
+		○ Syntax:
+			• SELECT DISTINCT column FROM table
+	• COUNT
+		○ Returns the number of input rows that match a specific condition of a query
+		○ We can apply COUNT on a specific column or just pass COUNT(*).
+		○ Syntax:
+			• SELECT COUNT(name) FROM table;
+				• Simply returning the number of rows in the table
+			• Can combine with DISTINCT like:
+				• SELECT COUNT(DISTINCT(name))
+				• FROM table
+	• SELECT WHERE
+		○ The WHERE statement allows us to specify conditions on columns for the rows to be returned
+		○ Syntax:
+			• SELECT column1, column2
+			• FROM table
+			• WHERE conditions;
+		○ The conditions are used to filter the rows returned from the SELECT statement
+		○ Comparision Operators
+			• Compare a column value to something
+				• Usual signs like =, <. > , >=, <=, <>, != for example
+		○ Logical Operators
+			• Allows us to combine multiple comparison operators
+				• AND
+				• OR
+				• NOT
+	• ORDER BY
+		○ Allows you to sort rows based on a column name, in either ascending or descending order
+		○ Syntax:
+			• SELECT column_1, column_2 FROM table
+			• Where condition
+			• ORDER BY column_1 ASC/DESC
+		○ If you leave it blank, ORDER BY uses ascending by default
+	• LIMIT
+		○ Limit the amount of rows returned in a query
+		○ Syntax:
+			• SELECT column1, column2 FROM table
+			• WHERE condition
+			• ORDER BY statement
+			• LIMIT number (example 5)
+	• BETWEEN
+		○ Can be used to match a value against a range of values:
+			• Value BETWEEN low AND high
+			• Can also combine NOT with BETWEEN 
+		○ Syntax:
+			• SELECT * from table
+			• WHERE condition BETWEEN low AND high
+		○ Useful for filtering dates
+	• IN
+		○ In certain cases you want to check for multiple possible value options, for example, if a user's shows up IN a list of known names
+		○ We can use the IN operator to create a condition that checks to see if a value is included in a list of multiple options
+		○ Syntax:
+			• Value IN (option1, option2, etc)
+			• Example
+				• SELECT color FROM table
+				• WHERE color IN ('red', 'blue')
+		○ Basically a way to use a bunch of OR statement at once
+		○ Can be combined with the NOT operator
+	• LIKE & ILIKE
+		○ The LIKE operator allows us to perform pattern matching against string data with the use of wildcard characters:
+			• Percent (%)
+				• Matches any sequence of characters
+			• Underscore (_)
+				• Matches any single character
+		○ Syntax:
+			• SELECT * FROM table WHERE name LIKE 'A%'
+			• SELECT * FROM table WHERE title LIKE 'Mission Impossible _'
+		○ LIKE is case-sensitive whereas ILIKE is not
+		○ Can combine for more complex patterns
+			• WHERE name LIKE '_her%'
+				• Returns a wildcard space at the beginning and then any with her in the name such as :
+					○ Cherl
+                    - Sherry

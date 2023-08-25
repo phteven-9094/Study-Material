@@ -1,0 +1,63 @@
+	• Timestamps and Extract
+		○ TIME – Contains only time
+		○ DATE – Contains only date
+		○ TIMESTAMP – Contains date and time
+		○ TIMESTAMPTZ – Contains date, time and timezone
+		○ TIMEZONE – SHOW TIMEZONE – figure out what timezone you're working with
+		○ NOW() – See the current datetime and timezone based off of standard GMT
+		○ TIMEOFDAY() -  Similar to now, but broken up more in a text string
+		○ CURRENT_TIME – Similar to TIMEOFDAY but just current time
+		○ CURRENT_DATE – Similar to TIMEOFDAY but just current date
+		○ EXTRACT()
+			▪ Allows you to "extract" or obtain a sub-component of a date value
+				• YEAR
+				• MONTH
+				• DAY
+				• WEEK
+				• QUARTER
+			▪ EXTRACT(YEAR FROM date_col)
+		○ AGE()
+			▪ Calculates and returns the current age given a timestampe
+			▪ AGE(date_col)
+		○ TO_CHAR()
+			▪ General function to convert date types to text
+			▪ Useful for timestampt formatting
+			▪ TO_CHAR(date_col, 'mm-dd-yyyy')
+	• Math Functions
+		○ Just check out the documentation, but you can use the usual +, -, *, /, % (modulo), ^ (exponents), etc
+		○ Ceil, floor, trunc (truncate toward 0) are options as well
+	• String Functions
+		○ Allows us to edit, combine, and alter text data columns
+		○ Check out documentation for full range of options as needed
+		○ Examples 
+			▪ String || string = string concatenation
+			▪ Upper(string) = Convert string to upper case
+	• Sub-Query
+		○ Allows you to construct more complex queries, essentially performing a query on the results of another query
+		○ Syntax is straightforward and involves two SELECT statements
+			▪ SELECT student_grade
+			▪ FROM test_scores
+			▪ WHERE grade > (SELECT AVG(grade)
+			▪ FROM test_scores)
+		○ Can also use the IN operator to check against multiple results returned
+			▪ SELECT student,grade
+			▪ FROM test_scores
+			▪ WHERE student IN
+			▪ (SELECT student FROM honor_roll_table)
+		○ EXISTS
+			▪ Used to test for existence of rows in a subquery
+				• SELECT column_name
+				• FROM table_name
+				• WHERE EXISTS
+				• (SELCT column_name FROM table_name WHERE condiation);
+	• Self-Join
+		○ A query in which a table is joined to itself
+		○ Useful for comparing values in a column of rows within the same table
+		○ The self join can be viewed as a join of two copies of the same table
+			▪ The table is not actually copied, but SQL performs the command as though it were
+			▪ There is no special keyword for a self join, it's simply standard JOIN syntax with the same table In both parts,
+			▪ When you are using a self join, it is necessary to use an alias for the table.
+				• SELECT tableA.col, tab;eB.col
+				• FROM table AS tableA
+				• JOIN table AS tableB ON
+				• TableA.some_col = tableB.other_col

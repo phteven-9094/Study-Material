@@ -1,0 +1,54 @@
+	• CASE
+		○ Only execute SQL code when certain conditions are met
+		○ Very similar to IF/ELSE statements
+		○ 2 Main Ways
+			▪ General Case statement
+				• CASE
+					○ WHEN condition1 THEN result1
+					○ WHEN condition2 THEN result2
+					○ ELSE some_other_results
+				• END
+			▪ Simple Example
+				• SELECT a,
+				• CASE WHEN a = 1 THEN 'one'
+					○ WHEN a = 2 THEN 'two'
+				• ELSE 'other'
+				• END
+				• FROM test;
+			▪ CASE expression
+				• First evaluates an expression then compares the result with each value in the WHEN clauses sequentially
+					○ CASE expression
+						▪ WHEN value1 THEN result1
+						▪ WHEN value2 THEN result2
+						▪ ELSE some_other_result
+					○ END
+	• COALESCE
+		○ Accepts an unlimited number of arguments. It returns the first argument that is not null. If all arguments are null, the COALESCE function will return null
+			▪ COALESCE (arg_1, arg_2, …, argu_n)
+	• CAST
+		○ Let's you convert from one data type into another
+			▪ Keep in mind not every instance of a data type can be CAST to another data type, it must be reasonable to convert the data, for example '5' to an integer will work, 'five' to an integer will not.
+		○ Syntax
+			▪ SELECT CAST('5' AS INTEGER)
+		○ PostgreSQL CAST operator
+			▪ SELECT '5'::INTEGER
+		○ You can use this in a SELECT query with a column name instead of a single instance
+			▪ SELECT CAST(date AS TIMESTAMP)
+			▪ FROM table
+	• NULLIF
+		○ Takes in 2 inputs and returns NULL if both are equal, otherwise it returns the first argument passed.
+			▪ NULLIF(arg1,arg2)
+			▪ Example
+				• NULLIF(10,10)
+					○ Returns NULL
+	• Views
+		○ Instead of having to perform the same query over and over again, you can create a VIEW to quickly see this query with a simple call.
+			▪ SELECT * FROM view
+			▪ Essentially just a stored query
+			▪ Can be accessed as  a virtual table in PostgreSQL
+			▪ Notice that a view does not store data physically, it simply stores the query
+		○ Before the query, use this Syntax
+			▪ CREATE VIEW name_of_view AS
+			▪ Query
+		○ Can use CREATE VIEW OR REPLACE VIEW
+Can use DROP VIEW IF EXISTS view
