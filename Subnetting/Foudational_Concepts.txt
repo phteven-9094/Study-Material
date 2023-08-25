@@ -1,0 +1,15 @@
+	• Numbering Systems
+		○ It's all about the base – total number of distinct values a digit can have
+			▪ Decimal – Base 10
+			▪ Binary – Base 2
+		○ Rango of each digit
+			▪ 0 to Base – 1
+				• Base 10 = 0 – 9
+		○ Number of digits and the base determine total number of unique values that can be represented
+			▪ Number of Unique value -> Base ^ Number of digits
+	• Binary to Decimal
+	128	64	32	16	8	4	2	1
+	1	0	0	1	0	1	0	0
+	You would essentially multiply down and add them together to get the Decimal from binary
+	• Decimal to Binary
+		○ To convert to binary, essentially subtract each column of the binary values until you have no more remaining

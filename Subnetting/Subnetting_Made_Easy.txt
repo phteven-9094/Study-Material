@@ -1,0 +1,27 @@
+	• Identify the octet of interest
+	• Write out answers so far
+		○ Network Address
+			▪ Octets to the left are the same
+			▪ Octet to the right are 0
+		○ Broadcast Address
+			▪ Octets to the left are the same
+			▪ Octets to the right are 255
+	• Calculate block size
+	• Find multiple of block size
+		○ Network address 
+			▪ Just less than or equal to the octet of interest
+		○ Broadcast Address
+			▪ Add the block size – 1 to the network address number
+	• Example:
+		○ IP = 172.16.1.1 & Subnet 255.255.224.0
+			▪ The octet of interest is the one that is not 255 or 0
+			▪ In this case, the 3rd octet
+		○ Network Address would be: 172.16. .0
+		○ Broadcast: 172.16. .0
+		○ To calculate block size, take 256 and subtract the octet of interest
+			▪ 256 – 224 = 32
+		○ Find the multiples of block size
+			▪ Network Address
+				• Multiple of the block size (32) that is just less than octet of interest in the IP address, in this case 96 since is a multiple of 32 and just less than 97 
+			▪ Broadcast Address
+Add the block size – 1 to the network address number

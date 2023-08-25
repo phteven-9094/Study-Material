@@ -1,0 +1,10 @@
+	• Convert the IP Address and Subnet Mask into Binary
+	• Figure out the Network Portion
+		○ The 1's of the Subnet Mask
+			▪ Carry down the IP address portion of those that correspond with the 1's
+	• Create the Network Address
+		○ Take the Network portion and for the host portion, set all those bits to 0, then convert the number back to decimal
+	• Broadcast Address
+		○ Take the network portion and set all the host bits to 1, then convert back to decimal
+	• Valid host range
+1 more than the network address and 1 less than the broadcast address

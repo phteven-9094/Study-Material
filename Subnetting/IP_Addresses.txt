@@ -1,0 +1,20 @@
+	• IPV4 Format
+		○ 2 different 32 bit numbers
+			▪ IP Address and Subnet Mask
+		○ The IP address
+			▪ 207.173.75.66 (dotted decimal format valid ranged 0-255)
+			▪ 11001111.10101101.01001011.01000010 (binary
+		○ Subnet Mask
+			▪ 255.255.255.0 (dotted decimal format)
+		○ Shorthand 207.173.75.66/24
+	• Subnet mask identifies which bits from the IP address define the network and which bits define the host.
+	• Subnet Mask Rules
+		○ All subnet masks start with a series of 1s and end with a series of 0s.
+		○ The point where the bits change from 1s to 0s is the network address boundary
+		○ Examples:
+			▪ 11111111.11100000.00000000.00000000 (valid)
+			▪ 11111101.11111110.00000000.00000000 (NOT valid)
+			▪ 255.255.128.0 (valid)
+			▪ 255.255.129.0 (NOT valid)
+		○ Can be shortened to just specify how many bits represent the network portion
+        - Called CIDR notation
