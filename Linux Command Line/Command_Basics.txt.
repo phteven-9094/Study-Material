@@ -1,0 +1,6 @@
+ - Date 
+    - Prints out the current date and time 
+ - Ncal 
+    - "New Calendar" 
+    - Prints out the current calendar 
+    - Can do "cal" for a horizontal calendar 
