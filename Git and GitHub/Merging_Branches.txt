@@ -1,0 +1,27 @@
+	• Consists of incorporating changes between branches
+	• We merge branches, not specific commits
+	• We always merge to the current HEAD branch
+	• Basic Steps
+		○ Switch to or checkout the branch you want to merge the changes into (the receiving branch)
+			▪ Often will be the Master or Main branch
+		○ Use the git merge command to merge changes from a specific branch into the current branch
+		○ Git merge <branch-name> where branch-name is the merging branch
+		○ This is referred to as a fast forward merge where the master branch "fast-forwards" to the most recent branch
+		○ If there are additional commits to the master branch, look below
+	• Generating Merge Commits
+		○ If someone has done work on Master, so now master has changes not on your branch, ie not a fast forward merge
+		○ Git performs a "merge commit"
+			▪ We end up with a new commit on the master branch
+			▪ Git will prompt you for a message
+			▪ These commits will have more than one parent commit
+	• Merge Conflicts
+		○ This will happen if, for example, 2 people make a change to the same line of code
+		○ When these situations happen, you have to manually resolve them
+		○ When you encounter a merge conflict, Git warns you in the console that it could not auto-merge
+			▪ It also changes the contents of your files to indicate the conflicts that it wants you to resolve
+		○ Steps
+			▪ Open up the file(s) with merge conflicts
+			▪ Edit the file(s) to remove the conflicts
+				• Decide which branch's content you want to keep in each conflict. Or keep the content from both
+			▪ Remove the conflict "markers" in the document
+                Add your changes and then make a commit

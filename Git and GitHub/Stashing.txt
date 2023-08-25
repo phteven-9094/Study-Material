@@ -1,0 +1,15 @@
+	• If you don't want to commit, and need to move to a different branch, stash can be used to "save" or "pause" your changes
+	• Git Stash
+		○ Running git stash will take all uncommitted changes (staged and unstaged) and stash them, reverting the changes in your working copy
+		○ Can also use git stash save
+		○ Use git stash pop to remove the most recently stashed changes in your stash and re-apply them to your working copy
+			▪ Removes the stash after adding the changes back in
+	• Git Stash Apply
+		○ Can be used to apply whatever is stashed away, without removing it from the stash. This can be useful if you want to apply stashed changes to multiple branches
+	• Working with multiple stashes
+		○ You can add multiple stashes onto the stack of stashes. They will all be stashed in the order you added them
+		○ Can use git stash list to list all of the stashes available
+		○ Use git stash apply stash@{number of stash} to apply a specific stash
+	• Dropping and Clearing the Stash
+		○ To delete a particular stash, you can use git stash drop <stash-id>
+            To clear the entire stash list, use git stash clear

@@ -1,0 +1,38 @@
+	• Tags are pointers that refer to particular points in Git history.
+		○ Most often used to mark version releases for projects (v4.1.0, v7.1.1, etc)
+	• Lightweight tags
+		○ Usually just a name/label that points to a particular commit
+	• Annotated tags
+		○ Stores extra meta data such as  authors name and email, the date, and a tagging message (like a commit message)
+	• Semantic Versioning
+		○ Set of rules and requirements that determine how version numbers are decided
+		○ First Number – Major Release
+		○ Second Number – Minor Release
+		○ 3rd Number = Patch
+		○ Initial release may be 1.0.0
+			▪ Patch releases, such as bug fixes, might change it to 1.0.1
+				• IE, changes that don't impact how the code is used
+			▪ A minor release such as a new feature or functionality, but the project is still backwards compatible. The new functionality is optional and should not force users to rewrite their own code.
+			▪ You would reset the patch counter, so a minor release would be 1.1.0.
+			▪ The next Major release signifies changes that is no longer backwards compatible, which would reset the last 2 numbers while incrementing the first one (2.0.0)
+	• Viewing & Searching Tags
+		○ Git tag will print a list of all the tags in the current repo
+		○ Can search by using git tag –l <search> ("v17x")
+		○ Can use git show <tag> to show the tag
+	• Creating Lightweight tags
+		○ Git tag <tagname>
+			▪ By default, Git will create the tag referring too the commit that HEAD is referencing. Essentially the most recent commit on the current branch.
+	• Creating Annotated Tags
+		○ Git tag –a
+			▪ Git will then open your default text editor and prompt you for additional information.
+			▪ Similar to git commit, we can also use the –m option to pass a message directly and forgo the opening of the text editor.
+	• Tagging previous commits
+		○ Git tag <tagname> <commit-hash>
+	• Replacing tags with force
+		○ Git tag –f <tagname>
+	• Deleting Tags
+		○ Git tag –d <tagname>
+	• Pushing Tags
+		○ Git push –tags
+		○ Git push remote (origin) <tagname>
+            By default, the git push command doesn't transfer tags to remote servers.     

@@ -1,0 +1,26 @@
+	• Can view remote tracking branches with git branch –r
+	• As you make commits, the pointer for the local branch reference moves with each one
+		○ The remote branch reference stays where it's at when the repo was cloned/pulled down
+		○ Using git status will tell you how far ahead of the remote branch pointer you are
+		○ You can check out these pointers with git checkout, but you will be in Detached HEAD status
+	• When you clone down a repo with multiple branches, you might only see the main branch
+	• You can see and work with the other branches by using the git switch command
+		○ Git switch <remote-branch-name>
+	• Git Fetch
+		○ Say another collaborate added commits in Github to whatever branch you are working on
+		○ To get those changes, you can use either git fetch or git pull
+		○ Git fetch will bring changes from the Remote repo, but those changes will not be automatically integrated into our working files
+			▪ Think of it like "Please go and get the latest info from Github, but don't mess up my working directory"
+		○ Git fetch <remote> fetches branches and history from a specific remote repo. It only updates remote tracking branches
+		○ Git fetch origin would fetch all changes from the origin remote repo
+	• Git Pull
+		○ Git pull is a command to retrieve changes from a remote repo. Unlike fetch, pull actually updates our HEAD branch with whatever changes are retrieved from the remote.
+			▪ "Go and download data from GitHub AND immediately update my local repo with those changes.
+			▪ Like a git fetch + git merge
+		○ To pull, we specify the particular remote and branch we want to pull using:
+			▪ Git pull <remote> <branch>
+			▪ Just like merge, it matters where we run this command from. Whatever branch we run it from is where the changes will be merged into.
+			▪ Git pull origin master would fetch the latest information from the origin's master branch and merge those changes into our current branch.
+			▪ If you don't specify a remote or branch to pull from, git assumes the following:
+				• Remote will default to origin
+                Branch will default to whatever tracking connection is configured for your branch.

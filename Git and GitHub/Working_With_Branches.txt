@@ -1,0 +1,22 @@
+	• Think of branches as alternative timelines for a project
+	• Enable us to create separate contexts where we can try new things, or even work on multiple ideas in parallel
+	• If we make changes on one branch, they do not impact the other branches (unless we merge the changes)
+	• What is HEAD?
+		○ Simply a pointer that refers to the current "location" in your repo. It points to a particular branch reference.
+	• Viewing Branches
+		○ Use git branch to view your existing branches.
+		○ Look for the * to indicate which branch you are currently on
+	• Make a new Branch
+		○ Use git branch <branch-name> to make a new branch based upon the current HEAD.
+		○ This just creates the branch. It does not switch to the branch
+		○ You can switch to a new branch after creation by using git switch <branch-name>
+		○ You can create a new branch and switch to use using git switch –c <branch-name>
+	• If you have uncommitted changes in a branch and you try to switch to another branch, you will get an error that says to commit or "stash" the changes.
+		○ See ---- for info on Stash
+	• Deleting & Renaming Branches
+		○ You can delete a branch with git branch –d <branch-name>
+			▪ Can also use –delete
+		○ You can't delete the branch you are on currently, and it needs to be fully merged
+			▪ If you want to force it, you can use git branch –D <branch-name> or –delete –force
+		○ If you want to rename a branch, first change to the branch you want to rename
+            Then use git branch –m <new-branch-name>

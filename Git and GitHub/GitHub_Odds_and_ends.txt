@@ -1,0 +1,20 @@
+• READMEs
+	• A README file is used to communicate important info about a repo, including:
+		○ What the project does
+		○ How to run the project
+		○ Why it's noteworthy
+		○ Who maintains the project
+	• When creating a more extensive README, research Markdown
+• GitHub Gists
+	• Simple way to share code snippets and useful fragments with others. 
+	• Gists are much easier to create, but offer far fewer features than a typical GitHub repo.
+• GitHub Pages
+	• Public websites that are hosted and published via GitHub.
+	• They allow you to create a website simply by pushing your code to GitHub.
+	• GitHub pages is a hosting service for static webpages, so it does not support server-side code like Python, Ruby, or Node. Just HTML/CSS/JS
+	• User Sites
+		○ You get one user stie per github account. This is where you could host a portfolio site or some form of personal website.
+		○ The default URL is based on your GitHub username following this pattern: username.github.io though you can change this
+	• Project Sites
+		○ You get unlimited project sites. Each GitHub repo can have a corresponding hosted website. 
+It's as simple as telling GitHub which specific branch contains the web content. The default URLs follow this pattern: username.github.io/repo-name

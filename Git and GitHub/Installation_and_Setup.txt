@@ -1,0 +1,4 @@
+	• Define Git Name (Just display name for Git)
+		○ Git config –global user.name "Name"
+	• Define Git Email (Just email for for Git)
+        Git config –global user.email "Email"

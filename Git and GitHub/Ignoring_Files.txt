@@ -1,0 +1,12 @@
+	• We can tell Git which files and directories to ignore in a given repo, using a .gitignore file.
+	• This is useful for files you know you NEVER want to commit, including:
+		○ Secrets, API keys, creds, etc
+		○ OS files
+		○ Log Files
+		○ Dependencies & packages
+	• .gitignore
+		○ Create a file called .gitignore in the root of the repo.
+		○ Inside the file, we can write patterns to tell Git which file & folders to ignore:
+			▪ .DS_Store will ignore files named .DS_Store
+			▪ FolderName/ will ignore an entire directory
+                *.log will ignore any files with the .log extension

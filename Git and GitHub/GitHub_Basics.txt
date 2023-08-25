@@ -1,0 +1,38 @@
+	• Cloning GitHub Repos with Git Clone
+		○ Can clone a remote repo hosted on GitHub. 
+			▪ All we need is a URL that we can tell Git to clone for use
+	• To clone a repo, simply run git clone <url>
+		○ Git will retrieve all the files associated with the repo and will copy them to your local machine.
+	• Github Setup: SSH Config
+		○ Check for existing SSH Keys
+			▪ Use ls -al ~/.ssh 
+				• Lists the files in your .ssh directory, if they exist
+			▪ To make a new key, follow the directions here
+			▪ Add the SSH key to the ssh-agent by following the directions here
+			▪ Add a new SSH key to your Github account by following the directions here
+	• Creating a GitHub repo
+		○ Create an empty repo in GitHub
+		○ Either use a current repo or init a repo on your local machine
+		○ Setup a Git Remote
+			▪ Essentially a destination URL for Github to know about the local repo
+			▪ Start with git remote or git remote –v (verbose, for more info)
+				• This lists any remote you have in the repo
+			▪ To create a new remote, run
+				• Git remote add <name> <url>
+				• Origin is a commonly used name
+		○ You can rename your branch by using git branch –M <name>
+		○ Push the first commit using:
+			▪ Git push –u <remote> <branch>
+			▪ Example: git push –u origin main
+	• Pushing
+		○ To push up to GitHub, you need the remote AND the specific local branch
+			▪ For example, git push origin main
+		○ What is push –u?
+			▪ The –u option allows us to set the upstream of the branch we are pushing. You can think of this as a link connecting our local branch to a branch on GitHub
+			▪ Running git push –u origin master sets the upstream of the local master branch so that it tracks the master branch on the origin repo
+			▪ Once the upstream has been setup with –u, you can push the branch you are on with just git push.
+	• Push In Detail
+		○ While we often want to push a local branch up to a remote branch of the same name, we don't have to
+		○ To push our local pancake branch up to a remote branch called waffle, we could do:
+			▪ Git push origin pancake:waffle
+                Git push <remote> <local-branch>:<remote-branch>

@@ -1,0 +1,35 @@
+	• Navigation
+		○ Ls
+			▪ List
+			▪ List the contents of your current directory
+			▪ Can reference the path in the directory such as ls Pets
+			▪ -a flag will show hidden files
+		○ Open .
+			▪ Opens finder in the same directory you're in
+			▪ For Windows – start . Does the same thing
+		○ Pwd
+			▪ Print Working Directory
+			▪ Prints the path to the working directory
+				• Example /Users/stephen.hughes
+		○ Cd
+			▪ Change Directory
+				• How to move between directories/folders
+			▪ Cd ..
+				• Move back one directory
+		○ Can use CMD+K for clear
+	• Creating Files & Folders
+		○ Touch
+			▪ Use to create a file (or multiple)
+				• For example: touch purple.txt
+				• Or for multiple files: touch red.txt orange.py yellow.pdf
+			▪ Can make in a different location as long as you have the correct path
+		○ Mkdir
+			▪ Make directory
+				• Will create a new directory (or directories)
+	• Deleting Files & Folders
+		○ Rm
+			▪ Remove
+				• Will delete a file or files
+				• Permanently removes them!
+		○ Rm –rf
+            Use to delete a directory (r = recursive, f = force)            

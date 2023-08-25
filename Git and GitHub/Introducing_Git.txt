@@ -1,0 +1,5 @@
+	• What is Git?
+		○ The world's most popular Version Control System (VCS)
+		○ Version Control
+			▪ Is software that tracks and manages changes to files over time
+                Generally allow users to revisit earlier versions of files, compare changes between versions, undo changes, and more
