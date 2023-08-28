@@ -1,0 +1,17 @@
+- Encryption of Data At Rest
+	• Encryption encodes data with a secret key, which makes it unreadable
+		○ Only those who have the secret key can decode the data
+		○ AWS KMS can manage your secret keys
+	• AWS supports encryption of data at rest
+		○ Data at rest = Data stored physically (on disk or on tape)
+		○ You can encrypt data stored in any service that is supported by AWS KMS, including:
+			▪ S3
+			▪ EBS
+			▪ EFS
+            - RDS managed databases
+- Encryption of Data in Transit
+	• Encryption of data in transit (data moving across a network)
+		○ Transport Layer Security (TLS) - formerly SSL – is an open standard protocol
+		○ AWS certificate manager provides a way to manage, deploy, and renew TLS or SSL certificates
+	• Secure HTTP (HTTPS) creates a secure tunnel
+    - Uses TLS or SSL for the bidirectional exchange to data

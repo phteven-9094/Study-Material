@@ -1,0 +1,60 @@
+Container Basics
+	• Containers are a method of OS virtualization
+	• Benefits:
+		○ Repeatable
+		○ Self-contained execution environments
+		○ Software runs the same in different environments
+        - Faster to launch and stope or terminate than virtual machines
+
+What is Docker?
+	• Docker is a software platform that enables you to build, test, and deploy applications quickly
+	• You run containers on Docker
+		○ Containers are created from a template called an image
+	• A container has everything a software application needs to run
+	• Best used as a solution when you want to:
+		○ Standardize environments
+		○ Reduce conflicts between language stacks and versions
+		○ Use containers as a service
+		○ Run microservices using standardized code deployments
+        - Require portability for data processing
+
+Amazon ECS:
+	• Amazon Elastic Container Service
+		○ A highly scalable, fast, container management service
+	• Key benefits
+		○ Orchestrates the execution of Docker containers
+		○ Maintains and scales the fleet of nodes that run your containers
+		○ Removes the complexity of standing up the infrastructure
+	• Integrated with features that are familiar to Amazon EC2 service users
+		○ Elastic Load Balancing
+		○ Amazon EC2 security groups
+		○ Amazon EBS volumes
+        - IAM roles
+
+What is Kubernetes?
+	• Kubernetes is open source software for container orchestration
+		○ Deploy and manage containerized applications at scale
+		○ The same toolset can be used on premises and in the cloud
+	• Complements Docker
+		○ Docker enables you to run multiple containers on a single OS host
+		○ Kubernetes orchestrates multiple Docker hosts (nodes)
+	• Automates
+		○ Container provisioning
+		○ Networking
+		○ Load Distribution
+        - Scaling
+
+Amazon EKS:
+	• Amazon EKS
+		○ Enables you to run Kubernetes on AWS
+		○ Certified Kubernetes conformant (supports easy migration)
+		○ Supports Linux and Windows containers
+		○ Compatible with Kubernetes community tools and supports popular Kubernetes add-ons
+	• Use EKS to
+		○ Manage clusters of Amazon EC2 compute instances
+		○ Run containers that are orchestrated by Kubernetes on those instances
+
+Amazon ECR:
+ - A fully managed Docker container registry that makes it easy for developers to store, manage, and deploy Docker container images
+
+

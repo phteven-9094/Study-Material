@@ -1,0 +1,5 @@
+	• An elastic network interface is a virtual network interface that you can:
+		○ Attach to an instance
+		○ Detach from the instance, and attach to another instance to redirect network traffic
+	• Its attributes follow when it is reattached to a new instance
+    - Each instance in your VPC has a default network interface that is assigned a private IPv4 from the IPv4 address range of your VPC

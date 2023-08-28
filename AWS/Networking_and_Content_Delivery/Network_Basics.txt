@@ -1,0 +1,12 @@
+	• A computer network is two or more client machines that are connected together to share resources.
+	• A network can be logically partitioned into subnets.
+	• Networking requires a networking device (such as a route or switch) to connect all the clients together and enable communication between them.
+	• IP Addresses
+		○ Each client machine in a network has a unique Internet Protocol (IP) address that identifies it. 
+	• Classless Inter-Domain Routing (CIDR)
+		○ A common method to describe networks is CIDR. The CIDR address is expressed as follows:
+			▪ An IP Address
+			▪ Next, a slash character (/)
+			▪ Finally, a number that tell you how many bits of the routing prefix must be fixed or allocated for the network identifier
+		○ The bits that are not fixed are allowed to change.
+        - CIDR is a way to express a group of IP addresses that are consecutive to each other

@@ -1,0 +1,6 @@
+	• Assess, audit, and evaluate the configurations of AWS resources
+	• Use for continuous monitoring of configurations
+	• Automatically evaluate recorded configurations vs desired configurations
+	• Review configuration changes
+	• View detailed configuration histories
+    - Simplify compliance auditing and security analysis

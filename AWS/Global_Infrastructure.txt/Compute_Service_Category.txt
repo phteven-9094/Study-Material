@@ -1,0 +1,18 @@
+	• EC2
+		○ Provides resizable compute capacity as virtual machines in the cloud
+	• EC2 Auto-Scaling
+		○ Enables you to automatically add or remove EC2 instances according to conditions that you define.
+	• Amazon Elastic Container Service (ECS)
+		○ Highly scalable, high-performance container orchestration service that supports Docker containers
+	• EC2 Container Registry
+		○ Fully-managed Docker container registry that makes it easy for developers to store, manage, and deploy Docker container images.
+	• Elastic Beanstalk
+		○ Service for deploying and scaling web applications and services on familiar servers such as Apache and Microsoft Internet Information Service (IIS)
+	• Lambda
+		○ Enables you to run code without provisioning or manager servers.
+		○ You only pay for the compute time that you consume.
+		○ There is no charge when your code is not running.
+	• Elastic Kubernetes Service (EKS)
+		○ Makes it easy to deploy, manage, and scale containerized applications that use Kubernetes on AWS
+	• Fargate
+    - A compute engine for Amazon ECS that allows you to run containers without having to manage servers or clusters.

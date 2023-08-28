@@ -1,0 +1,3 @@
+	• Adds user sign-up, sign-in, and access control to your web and mobile applications
+	• Scales to millions of users
+    - Supports sign-in with social identity providers, such as Facebook, Google, and Amazon; and enterprise identity providers, such as Microsoft Active Directory via Security Assertion Markup Language (SAML) 2.0.

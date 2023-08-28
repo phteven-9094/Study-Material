@@ -1,0 +1,7 @@
+	• Is a resource for compliance-related information
+	• Provide access to security and compliance reports, and select online agreements
+	• Can access example downloads:
+		○ AWS ISO certifications
+		○ PCI and Service Organization Control reports
+	• Access AWS Artifact directly from the AWS management Console
+        - Under Security, Identify & Compliance, click Artifact

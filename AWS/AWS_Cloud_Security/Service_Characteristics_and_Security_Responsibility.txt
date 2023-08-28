@@ -1,0 +1,31 @@
+	• Infrastructure as a Service (IaaS) -
+		○ Customer has more flexibility over configuring networking and storage settings
+		○ Customer is responsible for managing more aspects of the security
+		○ Customer configures the access controls
+	• Platform as a Service (PaaS) - 
+		○ Customer does not need to manage the underlying infrastructure
+		○ AWS handles the OS, database patching, firewall configuration, and disaster recovery
+		○ Customer can focus on managing code or data
+	• Software as a Service (SaaS) - 
+		○ Software is centrally hosted
+		○ Licensed on a subscription model or pay-as-you-go basis
+		○ Services are typically accessed via web browser, mobile app, or API
+		○ Customers do not need to manage the infrastructure that supports the service
+	• Example services managed by the customer:
+		○ EC2
+		○ Elastic Block Store
+		○ Virtual Private Cloud
+	• Example services managed by AWS
+		○ Lambda
+		○ Relational Database Service
+		○ Elastic Beanstalk
+	• SaaS examples
+		○ Trusted Advisor
+			▪ Online tool that analyzes your AWS environment and provides real-time guidance and recommendations to help you provision your resources by following AWS best practices.
+			▪ Some Trusted Advisor features are free to all accounts, but Business Support and Enterprise Support customers have access to the full set of Trusted Advisor checks and recommendations.
+		○ Shield
+			▪ A managed DDoS protection service that safeguards applications running on AWS. 
+			▪ AWS Shield Advanced is available to all customers
+			▪ To contact the DDoS Response team, customers must have either Enterprise Support or Business Support from AWS Support.
+		○ Chime
+            - A communications service that enables you to meet, chat, and place business calls inside and outside your org, all using a single application.

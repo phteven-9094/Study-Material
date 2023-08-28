@@ -1,0 +1,39 @@
+	• The AWS Global Infrastructure is designed and built to deliver a flexible, reliable, scalable, and secure cloud computing environment with high-quality global network performance.
+	• The map in https://infrastructure.aws shows the current AWS Regions and more that are coming soon.
+	• AWS Regions:
+		○ An AWS Region is a geographical area.
+			▪ Data replication across Regions is controlled by you.
+			▪ Communication between Regions uses AWS backbone network infrastructure.
+		○ Each Region provides full redundancy and connectivity to the network
+		○ A Region typically consists of two or more Availability Zones.
+	• Availability Zones:
+		○ Each Region has multiple Availability Zones.
+		○ Each AZ is a fully isolated partition of the AWS infrastructure.
+			▪ There are currently 69 AZs worldwide
+			▪ AZs consist of discrete data centers
+			▪ They are designed for fault isolation
+			▪ They are interconnected with other AZs by using high-speed private networking
+			▪ You choose your AZ
+			▪ AWS recommends replicated data and resources across AZs for resiliency.
+	• AWS Data Centers
+		○ AWS data centers are designed for security.
+		○ Data centers are where the data resides and data processing occurs
+		○ Each data center has redundant power, networking, and connectivity, and is housed in a separate facility
+		○ A data center typically has 50,000– 80,000 physical servers.
+	• Points of Presence
+		○ AWS provides a global network of 187 Points of Presence locations.
+		○ Consists of 176 edge locations and 11 Regional edge caches
+		○ Used with Amazon CloudFront
+			▪ A global Content Delivery Network that delivers content to end users with reduced latency.
+		○ Regional edge caches used for content with infrequent access.
+	• AWS infrastructure features
+		○ Elasticity and scalability
+			▪ Elastic infrastructure; dynamic adaption of capacity
+			▪ Scalable infrastructure; adapts to accommodate growth
+		○ Fault Tolerance
+			▪ Continues operating properly in the presence of a failure
+			▪ Build-in redundancy of components
+		○ High availability
+			▪ High level of operational performance
+			▪ Minimized downtime
+             - No human intervention

@@ -1,0 +1,26 @@
+- VPC Sharing
+	• VPC sharing enables customers to share subnets with other AWS accounts in the same org as AWS Organizations.
+	• VPC sharing enables multiple AWS accounts to create their application resources into shared, centrally managed VPCs.
+	• Several benefits:
+		○ Separation of duties
+		○ Ownership
+		○ Security groups
+		○ Efficiencies
+		○ No hard limits
+        - Optimized costs
+
+- VPC Peering
+	• Networking connection between 2 VPCs that enables you to route traffic between them privately. Instances in either VPC can communicate with each other as if they are within the same network. You can create a VPC peering connection between your own VPCs, with a VPC in another AWS account, or with a VPC in a different AWS region.
+	• When you set up the peering connection, you create rules in your route table to allow the VPCs to communicate with each other through the peering resource.
+	• Restrictions:
+		○ IP address ranges cannot overlap
+		○ Transitive peering is not support
+        - You can only have one peering resource between the same two VPCs.
+
+- Site-to-Site VPN
+	• By default, instances that you launch into a VPC cannot communicate with a remote network. To connect your VPC to your remote network, you:
+		○ Create a new virtual gateway device
+		○ Define the configuration of the VPN device or the customer gateway
+		○ Create a custom route table to point corporate data center-bound traffic to the VPN gateway
+		○ Establish an AWS Site-to-Stie VPN connection to link the two systems together
+        - Configure routing to pass traffic through the connection

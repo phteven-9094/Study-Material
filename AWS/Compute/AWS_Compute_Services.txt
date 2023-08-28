@@ -1,0 +1,24 @@
+	• EC2 - 
+		○ Provides resizable virtual machines
+	• EC2 Auto Scaling - 
+		○ Supports application availability by allowing you to define conditions that will automatically launch or terminate EC2 instances
+	• Elastic Container Registry 
+		○ Used to store and retrieve Docker images
+	• VMware Cloud on AWS 
+		○ Enables you to provision a hybrid cloud without custom hardware
+	• Elastic Beanstalk
+		○ Provides a simple way to run and manage web applications
+	• Lambda 
+		○ Serverless compute solution. You pay only for the compute time that you use
+	• Elastic Kubenetes Service (EKS)
+		○ Enables you to run managed Kubernetes on AWS
+	• Lightsail
+		○ Provides a simple to use service for building an application or website
+	• Batch
+		○ Provides a tool for running batch jobs at any scale
+	• Fargate
+		○ Provides a way to run containers that reduce the need for you to manage servers or clusters
+	• Outposts
+		○ Provides a way to run containers that reduce the need for you to manage servers or clusters
+	• Serverless Application Repository 
+        Provides a way to discover, deploy, and publish serverless applications

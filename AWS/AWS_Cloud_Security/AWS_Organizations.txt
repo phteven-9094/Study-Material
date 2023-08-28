@@ -1,0 +1,14 @@
+	• AWS Organizations enables you to consolidate multiple AWS accounts so that you centrally manage them
+	• Security features of AWS Organizations:
+		○ Group AWS accounts into Organizational Units (OUs) and attach different access policies to each OU.
+		○ Integration and support for IAM
+			▪ Permissions to a user are the intersection of what is allowed by AWS Organizations and what is granted by IAM in that account
+        - Use service control policies to establish control over the AWS services and API actions that each AWS account can access
+- Service Control Policies:
+	• Service Control Policies (SCPs) offer centralized control over accounts
+		○ Limit permissions that are available in an account that is part of an organization
+	• Ensures that accounts comply with access control guidelines
+	• SCPs are similar to IAM permissions policies:
+		○ They use similar syntax
+		○ However, an SCP never grants permissions
+        - Instead, SCPs specify the maximum permissions for an organization

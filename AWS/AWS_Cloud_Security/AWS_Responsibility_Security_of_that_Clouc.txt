@@ -1,0 +1,8 @@
+	• AWS operates , manages, and controls the components from the bare metal host OS and hypervisor virtualization layer down to the physical security of the facilities where the services operate.
+		○ It means that AWS is responsible for protecting the global infra that runs all the services that are offered in the AWS Cloud.
+			▪ Includes AWS regions, AZs, and edge locations
+	• AWS is responsible for the physical infra that hosts your resources including:
+		○ Physical security of data centers
+		○ Hardware Infra
+		○ Software Infra
+        - Network Infra

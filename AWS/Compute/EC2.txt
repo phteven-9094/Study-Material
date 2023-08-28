@@ -1,0 +1,126 @@
+	• Provides virtual machines where you can host the same kinds of applications that you might run on a traditional on-prem server.
+	• It provides secure, resizable compute capacity in the cloud.
+	• Common uses for EC2 instances include, but are not limited to:
+		○ Application servers
+		○ Web servers
+		○ Database servers
+		○ Game servers
+		○ Mail servers
+		○ Media servers
+		○ Catalog servers
+		○ File servers
+		○ Computing servers
+		○ Proxy servers
+	• Overview:
+		○ Provides virtual machines – referred to as EC2 instances – in the cloud
+		○ Gives you full control over the guest OS (Windows or Linux) on each instance
+		○ You can launch instances of any size into an AZ anywhere in the world
+			▪ Launch instances from Amazon Machine Image (AMI)
+			▪ Launch instances with a few clicks or a line of code, and they are ready in minutes
+		○ You can control traffic to and from instances
+        - Elastic refers to the fact that you can easily increase or decrease the number of servers you run to support an application automatically; and you can also increase or decrease the size of existing servers.
+
+- Launching an EC2 Instance:
+	• Select an AMI
+		○ Amazon Machine Image (AMI)
+			▪ Is a template that is used to create an EC2 instance
+			▪ Contains a Windows or Linux OS
+			▪ Often also has some software pre-installed
+		○ AMI Choices:
+			▪ Quick Start– Linux and Windows AMIs that are provided by AWS
+			▪ My AMIs – Any AMIs that you created
+			▪ AWS Marketplace – Pre-configured templates from third parties
+			▪ Community AMIs – AMIs shared by others; use at your own risk
+	• Select an Instance Type
+		○ Consider your use case
+			▪ How will your EC2 instance you create be used?
+		○ The instance type that you choose determines
+			▪ Memory (RAM)
+			▪ Processing Power (CPU)
+			▪ Disk space and disk type (Storage)
+			▪ Network performance
+		○ Instance type categories 
+			▪ General purpose
+			▪ Compute optimized
+			▪ Memory optimized
+			▪ Storage optimized
+			▪ Accelerated computing
+		○ Instance types offer family, generation, and size
+	• Specify Network Settings
+		○ Where should the instance be deployed?
+			▪ Identify the VPC and optionally the subnet
+		○ Should a public IP address be automatically assigned?
+			▪ To make it internet-accessible
+	• Attach IAM role (optional)
+		○ Will software on the EC2 instance need to interact with other AWS services?
+			▪ If yes, attach an appropriate IAM Role.
+		○ An AWS IAM role that is attached to an EC2 instance is kept in an instance profile
+		○ You are not restricted to attaching a role only at instance launch
+			▪ You can also attach a role to an instance that already exists
+	• User data script (Optional)
+		○ Optionally specify a user data script at instance launch
+		○ Use user data scripts to customize the runtime environment of your instance
+			▪ Script executes the first time the instance starts
+		○ Can be used strategically
+			▪ For example, reduce the number of custom AMIs that you build and maintain
+	• Specify Storage
+		○ Configure the root volume
+			▪ Where the guest OS is installed
+		○ Attach additional storage volumes (optional)
+			▪ AMI might already include more than one volume
+		○ For each volume, specify:
+			▪ The size of the disk (in GB)
+			▪ The volume type
+				• Different types of SSDs and HDDs are available
+			▪ If the volume will be deleted when the instance is terminated
+			▪ If encryption should be used
+	• Add tags
+		○ A tag is a label that you can assign to an AWS resource
+			▪ Consists of a key and an optional volume
+		○ Tagging is how you can attach metadata to an EC2 instance
+		○ Potential benefits of tagging – Filtering, automation, cost allocation, and access control
+	• Security Group Settings
+		○ A security group is a set of firewall rules that control traffic to the instance
+			▪ It exists outside of the instances guest OS
+		○ Create rule
+	• Identify or create the key pai
+    - At instance launch, you specify an existing key pair or create a new key paiir
+
+- Pricing Models
+	• On-Demand Instances
+		○ Pay by the hour
+		○ No long-term commitments
+		○ Eligible for the AWS Free Tier
+	• Dedicated Hosts
+		○ A physical server with EC2 instance capacity fully dedicated to your use
+	• Dedicated Instances
+		○ Instances that run in a VPC on hardware that is dedicated to a single customer
+	• Reserved Instances
+		○ Full, partial, or no upfront payment for instance
+		○ Discount on hourly charge for that instance
+		○ 1 year or 3 year term
+	• Scheduled Reserved Instances
+		○ Purchase a capacity reservation that is always available on a recurring schedule you specify
+		○ 1 year term
+	• Spot Instances
+		○ Instances run as long as they are available and your bid is above the Spot Instance price
+		○ They can be interrupted by AWS with a 2 minute notification
+		○ Interruption options include terminated, stopped, or hibernated
+		○ Prices can be significantly less expensive compared to On-Demand instances
+        - Good choice when you have flexibility in when your applications can run
+
+- Pricing Model Use Cases:
+	• On-Demand Instances
+		○ Short-term, spiky, or unpredictable workloads
+		○ Application development or testing
+	• Spot Instances
+		○ Applications with flexible start and end times
+		○ Applications only feasible at very low computer prices
+		○ Users with urgent computing needs for large amounts of additional capacity
+	• Reserved Instances
+		○ Steady state or predictable usage workloads
+		○ Applications that require reserved capacity, including disaster recovery
+		○ Users able to make upfront payments to reduce total computing costs even further
+	• Dedicated Hosts
+		○ Bring your own license
+        - Compliance and regulatory restrictions

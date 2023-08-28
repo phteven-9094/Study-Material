@@ -1,0 +1,11 @@
+	• An easy way to get web apps up and running
+	• A managed service that automatically handles:
+		○ Infrastructure provisioning and configuration
+		○ Deployment
+		○ Load balancing
+		○ Automatic scaling
+		○ Health monitoring
+		○ Analysis and debugging
+		○ Logging
+	• No additional charge for Elastic Beanstalk
+        - Pay only for the underlying resources that are used

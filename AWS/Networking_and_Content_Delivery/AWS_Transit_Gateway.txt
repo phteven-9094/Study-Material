@@ -1,0 +1,3 @@
+	• Used to simplify your networking model. 
+	• You only need to create and manage a single connection from the central gateway into each VPC, on-prem data center, or remote office across your network.
+	• A transit gateway acts as a hub that controls how traffic is routed among all the connected networks.

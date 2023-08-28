@@ -1,0 +1,24 @@
+	• Topics:
+		○ A particular stream of data
+			▪ Logs
+			▪ Purchases
+			▪ Twitter_tweets
+			▪ Trucks_gps
+		○ Similar to a table in a database (without all the constraints)
+		○ You can have as many topics as you want
+		○ A topic is identified by its name
+		○ Any kind of message format
+		○ The sequence of messages is called a data stream
+		○ You cannot query topics, instead, use Kafka Producers to send data and Kafka Consumers to read the data
+	• Partitions and Offsets
+		○ Topics are split in partitions
+			▪ Messages within each partition are ordered
+			▪ Each message within a partition gets an incremental ID, called offset
+		○ Kafka topics are immutable: once data is written to a partition, it can't be changed
+	• Important Notes
+		○ Once the data is written to a partition, it cannot be changed
+		○ Data is kept only for a limited time (Default is one week – configurable)
+		○ Offset only have a meaning for a specific partition
+			▪ Offsets are not re-used even if previous messages have been deleted
+		○ Order is guaranteed only within a partition (not across partitions)
+        - Data is assigned randomly to a partition unless a key is provided

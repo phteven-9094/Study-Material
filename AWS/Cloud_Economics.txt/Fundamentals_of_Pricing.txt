@@ -1,0 +1,44 @@
+	• 3 fundamental drivers of cost with AWS:
+		○ Compute
+			▪ Charged per hour/second
+				• Linux is only charged by second
+		○ Storage
+			▪ Charged typically per GB
+		○ Data Transfer
+			▪ Outbound is aggregated and charged
+			▪ Inbound has no charge (with some exceptions)
+			▪ Charged typically per GB
+	• How do you pay for AWS?
+		○ Pay for what you use
+		○ Pay less when you reserve
+		○ Pay less when you use more and as AWS grows
+	• Pay for what you use:
+		○ Pay only for the services that you consume, with no large upfront expenses
+	• Pay less when you reserve:
+		○ Invest in Reserved Instances (RIs):
+			▪ Save up to 75%
+			▪ Options:
+				• All Upfront Reserved Instance (AURI) = Largest discount
+				• Partial Upfront Reserved Instance (PURI) = Lower discounts
+				• No Upfront Payments Reserved Instance (NURI) = Smaller discounts
+	• Pay less by using more:
+		○ Realize volume-based discounts:
+			▪ Savings as usage increases
+			▪ Tiered pricing for services like S3, EBS, EFS > the more you use, the less you pay per GB
+			▪ Multiple storage services deliver lower storage costs based on needs
+	• Pay even less as AWS Grows:
+		○ As AWS grows:
+			▪ AWS focuses on lowering cost of doing business
+			▪ This practice results in AWS passing savings from economies of scale to you
+			▪ Since 2006, AWS has lowered pricing 75 times
+			▪ Future higher-performing resources replace current resources for no extra charge.
+	• Custom Pricing:
+		○ Meet varying needs through custom pricing
+		○ Available for high-volume projects with unique requirements
+	• AWS Free Tier
+		○ Enables you to gain free hands-on experience with the AWS platform, products, and services. Free for 1 year for new customers
+	• Serviecs with No Charge:
+		○ Amazon VPC
+		○ Elastic Beanstalk
+		○ Auto Scaling
+        - AWS Cloud Formation

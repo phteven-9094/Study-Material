@@ -1,0 +1,6 @@
+	• Customers are subject to many different security and compliance regulations and requirements
+	• AWS engages with certifying bodies and independent auditors to provide customers with detailed information about the policies, processes, and controls that are established and operated by AWS
+	• Compliance programs can be broadly categorized:
+		○ Certifications and attestations
+		○ Laws, regulations, and privacy
+        - Alignments and frameworks

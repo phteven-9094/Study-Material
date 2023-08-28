@@ -1,0 +1,15 @@
+	• IAM
+		○ Enables you to manage access to AWS services and resources securely. 
+		○ By using IAM, you can create and manage AWS users and groups
+		○ You can use IAM permissions to allow and deny user and group access to AWS resources
+	• Organizations
+		○ Allows you to restrict what services and actions are allowed in your accounts
+	• Cognito
+		○ Let's you add user sign-up, sign-in, and access control to your web and mobile apps
+	• Artifact
+		○ Provides on-demand access to AWS security and compliance reports and select online agreements
+	• Key Management Service
+		○ Enables you to create and manage keys.
+		○ You can use AWS KMS to control the use of encryption across a wide range of AWS services and in your applications.
+	• Shield
+        - Managed DDoS protection service that safeguards applications running on AWS

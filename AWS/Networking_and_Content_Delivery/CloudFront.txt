@@ -1,0 +1,4 @@
+	• Fast, global, and secure CDN service
+	• Global network of edge locations and Regional edge caches
+	• Self-service model
+    - Pay as you go pricing

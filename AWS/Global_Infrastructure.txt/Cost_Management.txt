@@ -1,0 +1,6 @@
+	• Cost and Usage Report
+		○ Contains the most comprehensive set of AWS cost and usage data available, including additional metadata about AWS service, pricing, and reservations
+	• Budgets
+		○ Enables you to set custom budgets that alert you when your costs or usage exceed (or are forecasted to exceed) your budgeted amount
+	• Cost Explorer
+        Has an easy-to-use interface that enables you to visualize, understand, and manage your AWS costs and usage over time               

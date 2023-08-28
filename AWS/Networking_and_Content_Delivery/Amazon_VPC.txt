@@ -1,0 +1,16 @@
+	• Enables you to provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define
+	• Gives you control over your virtual networking resources, including:
+		○ Selection of IP address range
+		○ Creation of subnets
+		○ Configuration of route tables and network gateways
+	• Enables you to customize the network configuration for your VPC
+    - Enables you to use multiple layers of security
+- VPCs and Subnets:
+	• VPCs:
+		○ Logically isolated from other VPCs
+		○ Dedicated to your AWS account
+		○ Belong to a single AWS Region and can span AZs
+	• Subnets:
+		○ Range of IP addresses that divide a VPC
+		○ Belong to a single AZ
+        - Classified as public or private

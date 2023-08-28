@@ -1,0 +1,27 @@
+	• AWS Lambda is a serverless compute service
+		○ Upload your code
+		○ The code you run is a Lambda function
+		○ Run your code on a schedule or in response to events
+		○ Your code runs only when it is triggered
+		○ Pay only for the compute time that you use
+	• Benefits
+		○ It supports multiple programming languages
+		○ Completely automated administration
+		○ Buit-in fault tolerance
+		○ It supports the orchestration of multiple functions
+		○ Pay-per-use pricing
+	• Event sources
+		○ S3
+		○ DynamoDB
+		○ Simple Notification Service
+		○ Simple Queue Service
+		○ API Gateway
+		○ Application Load Balancer
+	• Limits:
+		○ Soft limits per Region:
+			▪ Concurrent executions = 1,000
+			▪ Function and layer storage = 75 GB
+		○ Hard limits for individual functions
+			▪ Max function memory allocation – 3,008 MB
+			▪ Function timeout = 15 minutes
+            - Deployment package size = 250 MB unzipped, including layers

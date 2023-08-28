@@ -1,0 +1,23 @@
+	• Intro to AWS Organizations:
+		○ Free account management service that enables you to consolidate AWS accounts into an organization that you create and centrally manage.
+		○ AWS Orgs include consolidated billing and account management capabilities that help you to better meet the budgetary, security, and compliance needs of your business.
+		○ Main benefits:
+			▪ Centrally managed access policies across multiple AWS accounts
+			▪ Controlled access to AWS services
+			▪ Automated AWS account creation and management
+			▪ Consolidated billing across multiple AWS accounts
+		○ AWS Orgs Terminology:
+		
+
+	• Key Features and Benefits
+		○ Policy-based account management
+		○ Group based account management
+		○ Application programming interfaces (APIs) that automate account management
+		○ Consolidated billing
+	• Security with AWS Orgs
+		○ Control access with AWS IAM
+		○ IAM Policies enable you to allow or deny access to AWS services for users, groups, and roles
+		○ Service control policies (SCPs) enable you to allow or deny access to AWS services for individuals or group accounts in an organizational unit (OU)
+	• Intro to AWS Billing and Cost Management
+		○ Service that you will use to pay your AWS bill, monitor your usage, and budget your costs.
+			▪ Enables you to forecast and obtain a better idea of what your costs and usage might be in the future so that you can plan ahead.

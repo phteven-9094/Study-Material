@@ -1,0 +1,11 @@
+	• Amazon Relational Database Service (RDS)
+		○ Makes it easy to set up, operate, and scale a relational database in the cloud.
+		○ Provides resizable capacity while automating time-consuming admin tasks such as hardware provisioning, database setup, patching and backups
+	• Amazon Aurora
+		○ A MySQL and PostgreSQL-compatible relational database. 
+		○ Up to 5 times faster than standard MySQL databases and 3 times faster than standard PostgreSQL databases.
+	• Amazon Redshift
+		○ Enables you to run analytic queries against petabytes of data that is stored locally in Redshift, and directly against exabytes of data that are stored in S3.
+		○ Delivers fast performance at any scale
+	• Amazon DynamoDB
+        - A key-value and document database that delivers single-digit millisecond performance at any scale with built-in security, backup and restore, and in-memory caching.

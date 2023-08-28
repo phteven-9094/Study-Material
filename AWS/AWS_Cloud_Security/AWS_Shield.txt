@@ -1,0 +1,6 @@
+	• Is a managed DDoS protection service
+	• Safeguards applications running on AWS
+	• Provides always-on detection and automatic inline mitigations
+	• AWS Shield Standard enabled for at no additional cost.
+		○ AWS Shield Advanced is an optional paid service
+    - Use it to minimize application downtime and latency

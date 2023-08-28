@@ -1,0 +1,20 @@
+	• A highly available and scalable Domain Name System (DNS) web service.
+	• Used to route end users to internet applications by translating names into numeric IP addresses that computers use to connect to each other
+	• Fully compliant with IPv4 and 6
+	• Connects user requests to infrastructure running in AWS and also outside of AWS
+	• Used to check the health of your resources
+	• Features traffic flow
+    - Enables you to register domain names
+- Route 53 Supported Routing
+	• Simple Routing – Use in Single-Server environments
+	• Weighted Round Robin Routing – Assign weights to resource record sets to specify the frequency
+	• Latency Routing – Help improve your global applications
+	• Geolocation Routing – Route traffic based on location of your users
+	• Geoproximity Routing – Route traffic based on location of your resources
+	• Failover Routing – Fail over to a backup site if your primary site becomes unreachable
+    - Multivalue Answer Routing – Respond to DNS queries with up to 8 healthy records selected at random
+- Route 53 DNS Failover
+	• Improve the availability of your applications that run on AWS by:
+		○ Configuring backup and failover scenarios for your own applications
+		○ Enabling highly available multi-region architectures on AWS
+        - Creating health checks

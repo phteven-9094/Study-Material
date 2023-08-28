@@ -1,0 +1,10 @@
+	• Acts as a virtual firewall for your instance, and it controls inbound and outbound traffic. 
+	• Act at the instance level, not the subnet level.
+	• Each instance in a subnet in your VPC can be assigned to a different set of security groups.
+	• At a basic level, a security group is a way for you to filter traffic to your instances
+	• Security groups have rules that control inbound and outbound traffic.
+		○ When you create a security group, it has no inbound rules. 
+		○ Therefore, no inbound traffic that originates from another host to your instance is allowed until you add inbound rules to your security group.
+		○ Be default, a security group includes an outbound rule that allows all outbound traffic.
+		○ You can remove the rule and add outbound rules that allow specific outbound traffic only.
+    - Security groups are stateful, which means that state information is kept even after a request is processed.

@@ -1,0 +1,4 @@
+	• Enables you to create and manage encryption keys
+	• Enables you to control the user of encryption across AWS servics and in your applications
+	• Integrates with AWS CloudTrail to log all key usage
+    - Uses hardware security modules (HSMs) that are validated by Federal Information Processing Standards (FIPS) 140-2 to protect keys

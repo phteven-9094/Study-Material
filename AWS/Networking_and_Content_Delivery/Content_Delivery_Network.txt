@@ -1,0 +1,5 @@
+	• Globally distributed system of caching servers
+	• Caches copies of commonly requested files (static content)
+	• Delivers a local copy of the request content from a nearby cache edge or Point of Presence
+	• Accelerates delivery of dynamic content
+    - Improves application performance and scaling

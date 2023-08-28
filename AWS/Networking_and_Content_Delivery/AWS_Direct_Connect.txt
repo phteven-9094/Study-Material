@@ -1,0 +1,2 @@
+	• Enables you to establish a dedicated, private network connection between your network and one of the DX locations.
+    - This private connection can reduce your network costs, increase bandwidth throughput, and provide a more consistent network experience than internet-based connections.

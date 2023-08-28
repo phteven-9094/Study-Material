@@ -1,0 +1,14 @@
+	• When you create a VPC, you assign it to an IPv4 CIDR block
+	• You cannot change the address range after you create the VPC
+	• The largest IPv4 CIDR block size is /16
+	• The smallest IPv4 CIDR block size is /28
+	• IPv6 is also supported (with a different block size limit)
+    - CIDR blocks of subnets cannot overlap
+- Public IP Address Types:
+	• Public IPv4 address:
+		○ Manually assigned through an Elastic IP address
+		○ Automatically assigned through the auto-assign public IP address settings at the subnet level
+	• Elastic IP Address
+		○ Associated with an AWS Account
+		○ Can be allocated and remapped anytime
+        - Additional costs might apply

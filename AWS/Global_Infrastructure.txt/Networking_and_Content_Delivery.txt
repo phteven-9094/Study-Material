@@ -1,0 +1,15 @@
+	• VPC
+		○ Enables you to provision logically isolated sections of the AWS Cloud
+	• Elastic Load Balancing
+		○ Automatically distributes incoming application traffic across multiple targets, such as EC2 instances, containers, IP addresses, and Lambda functions
+	• Amazon CloudFront
+		○ Fast content delivery network (CDN) service that securely delivers data, videos, applications, and application programming interfaces (APIs) to customers globally, with low latency and high transfer speeds
+	• Transit Gateway
+		○ Service that enables customers to connect their VPCs and their on-prem networks to a single gateway
+	• Route 53
+		○ Scalable cloud DNS web service designed to give you a reliable way to route end users to internet applications.
+		○ Translates names (like www.example.com) into the numeric IP addresses (like 192.0.2.1) that computers use to connect to each other
+	• Direct Connect
+		○ Provides a way to establish a dedicated private network connection from your data center or office to AWS, which can reduce network costs and increase bandwidth throughput.
+	• VPN
+        - Provides a secure private tunnel from your network or device to the AWS global network

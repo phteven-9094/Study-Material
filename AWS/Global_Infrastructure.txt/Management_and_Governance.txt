@@ -1,0 +1,16 @@
+	• AWS Management Console
+		○ Provides a web-based UI for accessing your AWS account
+	• Config
+		○ Provides a service that helps you track resource inventory and changes
+	• CloudWatch
+		○ Allows you to monitor resources and applications
+	• Auto-Scaling
+		○ Provides features that allow you to scale multiple resources to meet demand
+	• Command Line Interface
+		○ Provides a unified tool to manage AWS services
+	• Trusted Advisor
+		○ Helps you optimize performance and security
+	• Well-Architected Tool
+		○ Provides help in reviewing and improving your workloads
+	• CloudTrail
+        Tracks user activity and API usage

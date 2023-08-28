@@ -1,0 +1,7 @@
+	• AWS operations, manages, and controls the components from the software virtualization layer down to the physical security of the facilities where AWS services operate
+	• AWS is responsible for protecting the infrastructure that runs all the services that are offered in the AWS Cloud
+	• This infrastructure is composed of the hardware, software, networking, and facilities that run the AWS Cloud Services
+
+	• The customer is responsible for the encryption of data at rest and data in transit.
+	• The customer should also ensure that the network in configured for security and that security credentials and logins are managed safely.
+    Additionally, the customer is responsible for the configuration of security groups and the configuration of the OS that run on compute instances that they launch.

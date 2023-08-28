@@ -1,0 +1,7 @@
+	• A virtual device that enables you to privately connect your VPC to supported AWS services and VPC endpoint services that are powered by AWS PrivateLink.
+	• Connection to these services does not require an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection.
+	• Instances in your VPC do not require public IP addresses to communicate with resources in the service.
+	• Traffic between your VPC and the other service does not leave the Amazon network.
+	• 2 types of VPC endpoints:
+		○ An interface VPC enpoint enables you to connect to service that are powered by AWS PrivateLink. 
+        - Gateway endpoints incurs no additional charge. Standard charges for data transfer and resource usage apply
