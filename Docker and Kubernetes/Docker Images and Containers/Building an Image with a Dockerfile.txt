@@ -1,0 +1,22 @@
+- Create a new file named Dockerfile
+    - No extension needed
+    - For an example:
+        - FROM node
+            - copies an existing base image
+        - WORKDIR /app 
+            - Sets the working directory
+            - Tells Docker that all of the proceeding commands will be run in this directory
+        - COPY . .
+            - First dot is host directory
+            - Second dot is the container directory
+            - Can do something like Copy . /app
+            - Will want to use the documnetation to see all possibilities
+        - RUN npm install
+            - A command that the container will need to run in the working directory of the image
+        - EXPOSE 80
+            - Exposes a port for the container to listen on if necessary
+            - Technically optional, but recommended
+        - CMD ["node", "server.js"]
+            - Tells Docker to run the node command to run the server.js file 
+        
+- The file will contain the instructions for Docker to execute to build an image.
