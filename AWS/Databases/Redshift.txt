@@ -1,0 +1,19 @@
+	• Fast, fully managed data warehouse that makes it simple and cost-effective to analyze all your data by using standard SQL and your existing business intelligence (BI) tools. 
+	• Parallel Processing Architecture
+		○ The leader node manages communications with client programs and all communication with compute nodes. It parses and develops execution plans to carry out database operations.
+		○ The leader node compiles code and send intermediate results back to the leader node for final aggregation.
+		○ Like other services, you only pay for what you use. You can get started for as little as 25 cents per hour, and at scale, Redshift can deliver storage and processing for approximately $1,000 dollars per terabyte per year.
+		○ The Spectrum feature enables you to run queries against exabytes of data directly in S3
+	• Use Cases
+		○ Enterprise Data Warehouse (EDW)
+			▪ Migrate at a pace that customers are comfortable with
+			▪ Experiment without large upfront cost or commitment
+			▪ Respond faster to business
+		○ Big Data
+			▪ Low price point for small customers
+			▪ Managed service for ease of deployment and maintenance
+			▪ Focus more on data and less on database management
+		○ Software as a Service (SaaS)
+			▪ Scale the data warehouse capacity as demand grows
+			▪ Add analytic functionality to applications
+            - educe hardware and software costs

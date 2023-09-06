@@ -1,0 +1,29 @@
+	• To use AWS efficiently, you need insight into your AWS resources
+		○ How do you know when you should launch more EC2 instances?
+		○ Is your application's performance or availability being affected by a lack of sufficient capacity?
+		○ How much of your infrastructure is actually being used?
+	• CloudWatch
+		○ Monitors
+			▪ AWS resources
+			▪ Applications that run on AWS
+		○ Collects and Tracks
+			▪ Standard Metrics
+			▪ Custom Metrics
+		○ Alarms
+			▪ Send notifications to an Amazon SNS topic
+			▪ Perform EC2 Auto Scaling or Actions
+		○ Events
+			▪ Define rules to match changes in AWS environment and route these events to one or more target functions or streams for processing
+	• CloudWatch Alarms
+		○ Create alarms based on
+			▪ Static threshold
+			▪ Anomaly detection
+			▪ Metric math expression
+		○ Specify
+			▪ Namespace
+			▪ Metric
+			▪ Statistic
+			▪ Period
+			▪ Conditions
+			▪ Additional configuration
+            - Actions

@@ -1,0 +1,76 @@
+	• Overview
+		○ Data is stored as objects in buckets
+		○ Virtually unlimited storage
+			▪ Single object is limited to 5 TB
+		○ Designed for 11 9s of durability
+		○ Granular access to bucket and objects
+	• Storage Classes
+		○ Standard
+			▪ Designed for high durability, availability, and performance object storage for frequently accessed data.
+		○ Intelligent-Tiering
+			▪ Designed to optimize costs by automatically moving data to the most cost-effective access tier, without performance impact or operational overhead.
+		○ Standard-Infrequent Access (Standard-IA)
+			▪ Used for data that is accessed less frequently, but requires rapid access when needed.
+			▪ Designed to provide the high durability, high throughput, and low latency of Amazon S3 Standard, with a low per-GB storage price and per-GB retrieval fee.
+		○ One Zone-Infrequent Access (One Zone-IA)
+			▪ For data that is accessed less frequently, but requires rapid access when needed, but is stored in one AZ vs 3.
+		○ Glacier
+			▪ Secure, durable, and low-cost storage class for data archiving. You can reliably storage any amount of data at costs that are competitive with – or cheaper than – on-prem solutions.
+			▪ 3 retrieval options that ranges from a few minutes to hours.
+		○ Glacier Deep Archive
+			▪ Lowest-cost storage class for S3.
+			▪ Supports long-term retention and digital preservation for data that might be accessed once or twice in a year.
+		○ Common Use Cases:
+			▪ Storage application assets
+			▪ Static web hosting
+			▪ Backup and disaster recovery 
+            - Staging area for big data
+
+Pricing
+	• Pay only for what you use, including - 
+		○ GBs per month
+		○ Transfer OUT to other Regions
+		○ PUT,COPY,POST,LIST, and GET requests
+	• You do not pay for -
+		○ Transfers IN to Amazon S3
+		○ Transfers OUT from Amazon S3 to Amazon CloudFront or EC2 in the same Region
+	• To estimate S3 costs, consider the following - 
+		○ Storage class type - 
+			▪ Standard storage is designed for:
+				• 11 9s of durability
+				• 4 9s of availability
+			▪ S3 Standard-Infrequent Access (S-IA) is designed for:
+				• 11 9s of durability
+				• 3 9s of availability
+		○ Amount of storage - 
+			▪ The number and size of objects
+		○ Requests - 
+			▪ The number and type of requests (GET, PUT, COPY)
+			▪ Type of requests
+				• Different rates for GET requests than other requests
+		○ Data transfer - 
+			▪ Pricing is based on the amount of data that is transferred out of the S3 Region
+            - Data transfer in is free, but you incur charges for data that is transferred out.
+
+Glacier
+	• Review
+		○ Data archiving service that is designed for security, durability, and an extremely low cost
+			▪ S3 Glacier is designed to provide 11 9s of durability for objects
+			▪ It supports the encryption of data in transit and at rest through SSL or TLS
+			▪ The Vault Lock feature enforces compliance through a policy
+			▪ Extremely low-cost design works well for long-term archiving
+				• Provides 3 options for access to archives – expedited, standard, and bulk – retrieval times range from a few minutes to several hours
+	• Glacier
+		○ Storage service for low-cost data archiving and long-term backup
+		○ You can configure lifecycle archiving of Amazon S3 content to Amazon S3 Glacier
+		○ Retrieval options 
+			▪ Standard: 3-5 hours
+			▪ Bulk: 5-12 hours
+			▪ Expedited: 1-5 minutes
+		○ Use Cases
+			▪ Media asset archiving
+			▪ Healthcare information archiving
+			▪ Regulatory and compliance archiving
+			▪ Scientific data archiving
+			▪ Digital preservation
+            - Magnetic tape replacement

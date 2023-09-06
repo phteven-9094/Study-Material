@@ -1,0 +1,7 @@
+	• Enterprise-class relational database
+	• Compatible with MySQL or PostgreSQL
+	• Automate time-consuming tasks (such as provisioning, patching, backup, recovery, failure detection, and repair)
+	• Service Benefits
+		○ Highly available, fast distributed storage system.
+		○ Uses SQL queries
+        - Designed to have drop-in compatibility with MySQL and PostgreSQL database engines so that you can use most of your existing database tools with little or no change.

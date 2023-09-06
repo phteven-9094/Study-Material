@@ -1,0 +1,20 @@
+	• Reliability
+		○ A measure of your systems ability to provide functionality when desired by the user
+		○ System includes all systems components: hardware, firmware, and software
+		○ Probability that your entire system will function as intended for a specified period
+		○ Mean time between failures (MTBF) = total time in service/number of failures
+	• Availability
+		○ Normal operation time / total time
+		○ A percentage of uptime (for example, 99.9%) over time (for example, 1 year)
+		○ Number of 9s = 5 9s means 99.999 % availability
+	• High Availability
+		○ System can withstand some measure of degradation while still remaining available
+		○ Downtime is minimized
+		○ Minimal human intervention is required
+	• Factors that influence Availability
+		○ Fault Tolerance
+			▪ The built-in redundancy of an application's components and it's ability to remain operational
+		○ Scalability
+			▪ The ability of an application to accommodate increases in capacity needs without changing design
+		○ Recoverability
+            - The process, policies, and procedures that are related to restoring services after a catastrophic event

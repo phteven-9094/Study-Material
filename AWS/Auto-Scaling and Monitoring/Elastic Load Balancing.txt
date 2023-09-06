@@ -1,0 +1,32 @@
+	• Distributes incoming application or network traffic across multiple targets in a single AZ or across multiple AZs
+	• Scales your load balancer as traffic to your application changes over time
+	• Types:
+		○ Application Load Balancer
+			▪ Load balancing of HTTP & HTTPS traffic
+			▪ Routes traffic to targets based on content of request
+			▪ Provides advanced request routing targeted at the delivery of modern application architectures, including microservices and containers
+			▪ Operates at the application layer (OSI Layer 7)
+		○ Network Load Balancer
+			▪ Load balancing of TCP,UDP, and TLS traffic where extreme performance is required
+			▪ Routes traffic to targets based on IP protocol data
+			▪ Can handle millions of requests per second while maintaining ultra-low latencies
+			▪ Is optimized to handle sudden and volatile traffic patterns
+			▪ Operates at the transport layer (OSI Layer 4)
+		○ Class Load Balancer (Previous Generation)
+			▪ Load balancing of HTTP, HTTPS, TCP, and SSL Traffic
+			▪ Load balancing across multiple EC2 instances
+			▪ Operates at both the application and transport layers
+	• Use Cases
+		○ Highly available and fault-tolerant applications
+		○ Containerized Applications
+		○ Elasticity and scalability
+		○ VPC
+		○ Hybrid environments
+		○ Invoke Lambda functions over HTTP(S)
+	• Monitoring
+		○ Amazon CloudWatch Metrics
+			▪ Used to verify that the system is performing as expected and creates an alarm to initiate an action if a metric goes outside an acceptable range
+		○ Access logs
+			▪ Capture detailed information about requests sent to your load balancer
+		○ AWS CloudTrail logs
+            - Capture who, what, when and where of API interactions in AWS services

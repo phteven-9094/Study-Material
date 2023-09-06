@@ -1,0 +1,80 @@
+	• What is it?
+		○ A guide for designing infrastructures that are:
+			▪ Secure
+			▪ High-Performing
+			▪ Resilient
+			▪ Efficient
+		○ A consistent approach to evaluation and implementing cloud architectures
+		○ A way to provide best practices that were developed through lessons learned by reviewing customer architectures.
+	• 5 Pillars:
+		○ Operational Excellence
+			▪ Focus
+				• Run and monitor systems to deliver business value, and to continually improve supporting processes and procedures
+			▪ Key Topics
+				• Managing and automating changes
+				• Responding to events
+				• Defining standards to successfully manage daily operations
+			▪ Design Principles
+				• Perform operations as code
+				• Annotate documentation
+				• Make frequent, small, reversible changes
+				• Refine operations procedures frequently
+				• Anticipate failure
+				• Learn from all operational events and failures
+		○ Security
+			▪ Focus
+				• Protect information, systems, and assets while delivering business value through risk assessments and mitigation strategies
+			▪ Key Topics
+				• Identifying and managing who can do what
+				• Establishing controls to detect security events
+				• Protecting systems and services
+				• Protecting confidentiality and integrity of data
+			▪ Design Principles
+				• Implement a strong identity foundation
+				• Enable traceability
+				• Apply security at all layers
+				• Automate security best practices
+				• Protect data in transit and at rest
+				• Keep people away from data
+				• Prepare for security events
+		○ Reliability
+			▪ Focus
+				• Prevent and quickly recover from failures to meet business and customer demand
+			▪ Key Topics
+				• Setting up
+				• Cross-project requirements
+				• Recovery Planning
+				• Handling Change
+			▪ Design Principles
+				• Test recovery procedures
+				• Automatically recover from failure
+				• Scale horizontally to increase aggregate system availability
+				• Stop guessing capacity
+				• Manage change in automation
+		○ Performance Efficiency
+			▪ Focus
+				• Use IT and computing resources efficiently to meet system requirements and to maintain that efficiency as demand changes and technologies evolve
+			▪ Key Topics
+				• Selecting the right resource types and sizes based on workload requirements
+				• Monitoring performance
+				• Making informed decisions to maintain efficiency as business needs involve
+			▪ Design Principles
+				• Democratize advanced technologies
+				• Go global in minutes
+				• Use serverless architectures
+				• Experiment more often
+				• Have mechanical sympathy
+		○ Cost Optimization
+			▪ Focus
+				• Run systems to deliver business value at the lowest price point
+			▪ Key topics
+				• Understanding and controlling when money is being spent
+				• Selecting the most appropriate and right number of resources types
+				• Analyzing spending over time
+				• Scaling to meeting business needs without overspending
+			▪ Design Principles
+				• Adopt a consumption model
+				• Measure overall efficiency
+				• Stop spending money on data center operations
+				• Analyze and attribute expenditure
+                - Use managed and application-level services to reduce cost of ownership

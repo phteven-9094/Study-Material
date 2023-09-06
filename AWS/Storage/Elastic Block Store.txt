@@ -1,0 +1,35 @@
+	• Amazon EBS provides persistent block storge volumes for use with Amazon EC2 instances. Persistent storage is any data storage device that retains data after power to that device is shut off. It is also sometimes called non-volatile storage.
+	• Enables you to create individual storage volumes and attach them to an EC2 instance.
+		○ Offers block-level storage
+		○ Volumes are automatically replicated within its AZ
+		○ It can be backed up automatically to S3 through snapshots
+		○ Uses include:
+			▪ Boot volumes and storage for EC2 instances
+			▪ Data storage with a file system
+			▪ Database hosts
+			▪ Enterprise Applications
+	• Features
+		○ Snapshots
+			▪ Point-in-time snapshots
+			▪ Recreate a new volume at any time
+		○ Encryption
+			▪ Encrypted Amazon EBS volumes
+			▪ No additional cost
+		○ Elasticity
+			▪ Increase capacity
+			▪ Change to different types
+	• Volumes:
+		○ Amazon EBS volumes persist independently from the instance
+		○ All volume types are charged by the amount that is provisioned per month
+	• IOPS:
+		○ General Purpose SSD:
+			▪ Charged by the amount that you provision in GB per month until storage is released
+		○ Magnetic:
+			▪ Charged by the number of requests to the volume
+		○ Provisioned IOPS SDD:
+			▪ Charged by the amount that you provision in IOPS (multiplied by the percentage of days that you provision for the month)
+		○ Snapshots
+			▪ Added cost of Amazon EBS snapshots to Amazon S3 is per GB-month of data stored
+		○ Data transfer
+			▪ Inbound data transfer is free
+            - Outbound data transfer across Regions incurs charges

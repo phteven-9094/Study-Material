@@ -1,0 +1,10 @@
+	• Fast and flexible NoSQL database service for any scale
+		○ NoSQL database tables
+		○ Virtually unlimited storage
+		○ Items can have differing attributes
+		○ Low-latency queries
+		○ Scalable read/write throughput
+		○ Fully managed
+	• Core Components
+		○ Tables, items, and attributes are the core DynamoDB components
+        - DynamoDB supports two different kinds of primary keys: Partition and Sort key

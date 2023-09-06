@@ -1,0 +1,2 @@
+	• Online tool that provides real-time guidance to help you provision your resources following AWS best practices
+    - Looks at your entire AWS environment and gives you real-time recommendations in 5 categories

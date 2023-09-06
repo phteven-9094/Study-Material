@@ -1,0 +1,24 @@
+	• Scaling is the ability to increase or decrease the compute capacity of your application
+	• EC2 Auto Scaling
+		○ Helps you maintain application availability
+		○ Enables you to automatically add or removed EC2 instances according to conditions that you define
+		○ Detects impaired EC2 instances and unhealthy applications, and replaces the instances without your intervention
+		○ Provides several scaling options
+			▪ Manual
+				• Manually customize adding or subtracting EC2 instances within the EC2 console.
+			▪ Scheduled
+				• Manages EC2 instances based on workload patterns that are created at predetermined times
+			▪ Dynamic
+				• Adds or subtracts EC2 instances based on changes in demand
+			▪ Predictive
+			▪ Maintain current level
+				• When you want a specific or minimum number of instances to be executing 24/7
+	• Auto Scaling Groups
+		○ An Auto Scaling Group is a collection of EC2 instances that are treated as a logical grouping for the purposes of automatic scaling and management
+	• AWS Auto Scaling
+		○ Monitors your applications and automatically adjusts capacity to maintain steady, predictable performance at the lowest possible cost
+		○ Provides a simple, powerful user interface that enables you to build scaling plans for resources, including
+			▪ EC2 instances and Spot Fleets
+			▪ ECS Tasks
+			▪ DynamoDB tables and indexes
+            - Aurora Replicas

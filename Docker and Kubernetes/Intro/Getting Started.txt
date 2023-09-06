@@ -1,0 +1,7 @@
+	• Docker is a container technology: A tool for creating and managing containers
+		○ Container:
+			▪ A standardized unit of software
+				• A package of code and dependencies to run that code
+			▪ The same container always yields the exact same application and execution behavior.
+			▪ Support for Containers is built into moderns OSs
+            - Docker simplifies the creation and management of containers

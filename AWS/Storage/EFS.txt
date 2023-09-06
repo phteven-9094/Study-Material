@@ -1,0 +1,24 @@
+	• Features
+		○ File storage in the AWS Cloud
+		○ Works well for big data and analytics, media processing workflows, content management, web serving, and home directories
+		○ Petabyte-scale, low-latency file system
+		○ Shared storage
+		○ Elastic capacity
+		○ Supports Network File System (NFS) versions 4.0 and 4.1 (NFSv4)
+		○ Compatible with all Linux-based AMIs for Amazon EC2
+	• Implementation
+		○ Create your EC2 resources and launch your EC2 instance
+		○ Create your EFS file system
+		○ Create your mount targets in the appropriate subnets
+		○ Connect your EC2 instances to the mount targets
+		○ Verify the resources and protection of your AWS account
+	• File System
+		○ Mount Target
+			▪ Subnet ID
+			▪ Security groups
+			▪ One or more per file system
+			▪ Create in a VPC subnet
+			▪ One per AZ
+			▪ Must be in the same VPC
+		○ Tags
+            - Key-value pairs
