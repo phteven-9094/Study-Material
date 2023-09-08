@@ -24,4 +24,4 @@
     - Templates
         - if there is an error, CF will completely rollback
     - Permissions
-        - Person must have permissions to all resources mentioned in the template
+        - Person must have permissions to all resources mentioned in the template.
