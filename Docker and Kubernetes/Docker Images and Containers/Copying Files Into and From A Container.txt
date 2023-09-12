@@ -1,0 +1,9 @@
+ - To look into a container and add to it or extract from it while it is running:
+    - docker cp
+        - cp essentially means copy
+    - Full example:
+        - docker cp [folder or files] [container name and path]
+            - docker cp dummy/. borning_vaughan:/test
+    - Can see the file/folder in the container by
+        - docker cp {container:path} local_destination
+            - docker cp borning_vaughan:/test/test.txt dummy

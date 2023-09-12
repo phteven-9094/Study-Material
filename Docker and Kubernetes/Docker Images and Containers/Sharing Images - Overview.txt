@@ -1,0 +1,21 @@
+ - You may want to share an image or container with other people such as coworkers, publicly, etc
+    - Share the Dockerfile itself
+        - Simple run docker build .
+    - Share a Built Image
+        - Download an image, run a container based on it
+        - No build step required, everything is included in the image already
+
+- Pushing Images to DockerHub
+    - Docker Hub is the official docker image registry
+    - Free to Use to get started
+    - Public, private, and "official" Images
+    - Share: 
+        - docker push IMAGE_NAME
+    - Use:
+        - docker pull IMAGE_NAME
+    - Repos seem to work pretty similar to Github
+        - Set public or private
+        - Push/Pull to the repo
+        - Docker also gives some commands to help you with pushing and pulling.
+        - You can also login via docker login command
+            - Use docker logout to logout

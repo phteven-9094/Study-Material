@@ -1,0 +1,18 @@
+ - You'll probably want to clean up your list of containers that have been stopped at some point
+ - Can be done with docker rm [name]
+ - You will get an error if you try to remove a running container, you will get an error
+    - ie containers must be stopped before being removed
+ - You can pass multiple containers names to the rm command
+ - You can also use docker container prune to remove all stopped containers
+
+ - For images,
+    - docker images lists all images that you have
+    - To remove a image, you can use docker rmi [image_name]
+    - You can only remove an image if they are not being used by a container (even stopped ones!)
+    - Also has the docker image prune command which removes all unused images
+
+- Removing Stopped Containers automatically
+    - --rm flag automaitcally removes the container when it exits
+    - Add to the run command to use it, example:
+        - docker run -d --rm [name]
+            - Runs a specific container in detached mode and once it is stopped, it is removed

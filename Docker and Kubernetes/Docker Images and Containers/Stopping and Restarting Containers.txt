@@ -1,0 +1,9 @@
+ - Can list all running containers with docker ps
+    - Can add -a you can see all containers running or not
+- To restart a stopped a Docker container
+    - Search for stopped containers
+        - docker ps -a
+    - Find the name of the containers you want to restart
+    - Run restart command
+        - docker start [name]
+    

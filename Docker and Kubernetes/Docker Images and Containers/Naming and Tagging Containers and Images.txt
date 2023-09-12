@@ -1,0 +1,14 @@
+ - To create a tag for an image:
+    - Consists of 2 parts: name of repo : tag
+        - Name defines a group of, possibly more specialized, images
+        - Tag defines a specialized image within a group of images
+        - Done in the FROM portion of the Dockerfile
+            - FROM node:12
+                - Node is the group and 12 is the tag 
+        - Can also be named in buld command
+            - docker build -t goals:latest .
+
+ - To create a name for a container
+    - docker run --name [desired_name] [container_id]
+    - Can be used with other flags
+        - docker run -p 3000:80 -d --rm --name goalsapp [container_id]

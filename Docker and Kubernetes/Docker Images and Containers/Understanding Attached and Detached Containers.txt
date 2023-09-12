@@ -1,0 +1,7 @@
+ - When you restart a container, you won't be "attached" to the container in the terminal
+ - WHen you use the docker run command, you would be attached to the container in the terminal
+ - Add -d in front of the image tag in your command to run it in detached mode
+ - Can use docker attach [name] to attach to the container again
+ - Attached allows you to see the logs for a container
+ - Or you can use the command docker logs -f [name] to see the logs of a specific container
+ - Can add the -a flag to start command to start in attached mode
