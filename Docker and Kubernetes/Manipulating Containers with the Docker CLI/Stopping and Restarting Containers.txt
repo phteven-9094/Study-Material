@@ -6,4 +6,6 @@
     - Find the name of the containers you want to restart
     - Run restart command
         - docker start [name]
+- To stop a container
+    - docker stop [container]
     

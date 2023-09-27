@@ -54,6 +54,9 @@ Remove all stopped containers
 docker image prune :
  Remove all dangling images (untagged images)
 
+docker system prune:
+    Essentially combines the 2 above commands
+
 -a : 
 Remove all locally stored images
 
@@ -62,3 +65,6 @@ Push an image to DockerHub (or another registry) - the image name/tag must inclu
 
 docker pull IMAGE : 
 Pull (download) an image from DockerHub (or another registry) - this is done automatically if you just docker run IMAGE and the image wasn't pulled before
+
+Get logs of container:
+docker logs [contatiner name]
