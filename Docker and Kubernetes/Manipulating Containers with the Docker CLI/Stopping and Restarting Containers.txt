@@ -8,4 +8,5 @@
         - docker start [name]
 - To stop a container
     - docker stop [container]
+- To force it, you can use docker kill [container_id]
     
