@@ -1,0 +1,5 @@
+- Instead of having to remember the generated name or the ID, you can tag the image in the build command:
+    - docker build -t [dockerid][name]:[version]
+    - Example:
+        - docker build -t email/myfirstcontainer:latest .
+    - You don't have to use the version necessarily, if left out, Docker will run the latest image by default
