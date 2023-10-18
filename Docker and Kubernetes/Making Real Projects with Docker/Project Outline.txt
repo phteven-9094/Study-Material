@@ -1,0 +1,7 @@
+1. Create Node JS web app
+2. Create a Dockerfile
+3. Buding Image from Dockerfile
+4. Run image as container
+5. Connect to web app from a browser
+
+**Check the simpleweb folder for the project setup**
