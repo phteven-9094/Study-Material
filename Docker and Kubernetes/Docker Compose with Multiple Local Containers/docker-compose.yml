@@ -1,0 +1,14 @@
+#"Here are the containers I wanted created:"
+
+version: '3'
+services:
+  redis-server:
+    image: 'redis'
+    # Make it using the 'redis' image
+  node-app:
+    restart: always
+    build: .
+    ports:
+      - '4001:8081'
+      # Make it using the Dockerfile in the current directory
+      # Map port 8081 to 8081

@@ -1,0 +1,43 @@
+ - We're going to have 4 docker containers, where 3 point to a "parent" container
+ - Check the code under:
+    - index.js
+    - package.json
+
+
+ - Docker Compose
+    - Used to connect 2 containers together by starting multiple containers at the same time
+    - It is a separate CLI
+    - Check the docker-compose.yml file to see how it's built
+    - You don't necessarily need to set ports in the docker-compose file to get the containers to connect:
+        - In this case, it's used to ensure we can access it from the local machine
+    - Commands:
+        - docker-compose up
+            - equivalent to docker run myimage
+        - docker-compose up --build
+            - equivalent to:
+                - docker build .
+                - docker run myimage
+
+ - Stopping Docker Compose containers
+    - Launch in background
+        - docker-compose up -d
+    - Stop containers
+        - docker-compose down
+
+
+ - Container Maintenance with Compose
+    - Due to the added code in index.js, the container has crashed and no longer appears under docker ps
+    - To automatically restart a crashed container:
+        - 4 different restart policies:
+            - "no"
+                - Set by default
+                - Never attempt to restart this . container if it stops or crashes
+            - always
+                - If this container stops *for any reason* always attempt to restart it
+            - on-failure
+                - Only restart if the container stops with an error code
+            - unless-stopped
+                - Always restart unless we (the developers) forcibly stop it
+        To add a restart policy:
+            - Check the docker-compose yaml file
+            - It is set right after the node-app
