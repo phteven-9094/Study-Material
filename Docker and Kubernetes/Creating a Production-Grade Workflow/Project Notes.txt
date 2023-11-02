@@ -1,0 +1,42 @@
+    - We'll be generating a Project with a Project Generator
+    - We'll be making a React application and wrap it in a container
+
+
+
+- Make sure Node.JS is installed
+    - node -v to check the version
+    - If no version appears, download node js by googling for it
+- To generate the project
+    - npx create-react-app <projectname>
+        - In this case, it will be found under the folder "frontend"
+- Necessary Commands:
+    - npm run start
+        - Starts up a development server. For development use only.
+    - npm run test 
+        - Runs tests associated with the project.
+    - npm run build
+        - Builds a production version of the application
+    - Keep in mind, these commands are specific to JavaScript, but there will be other commands for other languages as well
+- Creating the Dev Dockerfile
+    - We'l end up with 2 Dockerfiles: one for Dev and one for production
+    - For the Dev Dockerfile, the changes will be in the file Dockerfile.dev in the frontend folder.
+    - To run the custom-named Dockerfile:
+        - docker build - f Dockerfile.dev
+            - The -f flag is telling docker that we want to specify what file to use
+    - To run the dev container
+        - Get the image ID
+        - docker run -p 3000:3000 <imageid>
+- Docker Volumes
+    - Instead of doing the straight COPY ..
+    - We'll adjust the docker run command
+    - We'll be using docker volumes which essentially sets up a placeholder in the container
+        - These placeholders are essentially references to your local machine
+            - Similar to the port mapping we've been doing
+    - Syntax:
+        - docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app <image_id>
+                                                        ^ get the present working directory and take the folder and everything inside it, map to the app folder in the container
+                                    ^ Put a bookmark on the node_modules folder
+                    ^ port mapping
+        - This will not work on a Windows machine if you are using CMD Promt or Powershell
+            - Note: If you are using Git Bash, it will work
+    
