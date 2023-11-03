@@ -1,5 +1,19 @@
     - We'll be generating a Project with a Project Generator
     - We'll be making a React application and wrap it in a container
+- Flow Specifics:
+    - Github Repo
+        - Branches
+            - Feature, Master
+        - Pull all the latest code from the Feature Branch
+        - Make some amount of changes
+        - Push those changes to the Feature Branch
+        - Create a pull request to take all the changes you've made and merge them to the master Branch
+    - Upload code to Travis CI to test your code
+    - Deploy to AWS Elastic Beanstalk
+
+- Where does Docker fit in?:
+    - Docker is not a requirement to perform this workflow, it's simply a general workflow at most orgs
+    - Docker is a tool that will make these tasks easier
 
 
 
@@ -39,4 +53,26 @@
                     ^ port mapping
         - This will not work on a Windows machine if you are using CMD Promt or Powershell
             - Note: If you are using Git Bash, it will work
+    
+- Shorthand with Docker Compose
+    - Check the docker-compose.yml file
+    - Should be able to just use docker-compose up from there
+
+- Executing tests
+    - docker run <image_id> npm run test
+    - It's going to start npm test while will run a short test suite
+    - Might need to allow std in by using docker run -it <image_id> npm run test
+    - This way you can hit Enter to trigger another test run
+
+- Live Updating Tests
+    - Can add a new service to the docker-compose.yml file
+    - Can attach the test to the existing container
+        - Open a 2nd terminal Window
+        - Get the running container ID
+        - docker exec -it <id> npm run test
+        - This will allow you to make changes and not have to re-run the test
+    - A better way is the docker-compose solution below
+
+- Docker Compose for Running Tests:
+    - Add a 2nd service to the docker-compose file
     
