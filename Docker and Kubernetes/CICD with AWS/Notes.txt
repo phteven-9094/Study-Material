@@ -1,0 +1,35 @@
+Services that will be used:
+    - Github
+    - Travis CI
+    - AWS
+
+Development Workflow that will be used:
+    - Github Repo
+        - Braches
+            - Feature
+            - Pull Request to Master
+    - Travis CI
+    - AWS Hosting
+
+Github Setup
+    - Create Github Repo
+    - Create local git Repo
+    - Connect local git to github remote
+    - Push work to github
+    - Check the Git and GitHub folder 
+
+Travis CI
+    - I won't be signing up for Travis CI, so I will try to take notes as close as I can
+    - Setup
+        - It will watch for changes to the main branch in Github, and then it will automatically pull all the code and deploy the app to AWS
+        - Can Sign Up or Sign in with Github, then authorize Travis CI to access Github
+        - Go to Profile, enable Travis CI as a Github app
+            - Select the Repo you want watched
+    - YML Config
+        - File name: .travis.yml
+    - Steps:
+        - Tell Travis we need a copy of Docker running
+        - Build our image using Dockerfile.dev
+        - Tell Travis how to run our test suite
+        - Tell Travis how to deploy our code to AWS
+        - We'll be making changes to the React app under "Creating a Production-Grade Workflow"
