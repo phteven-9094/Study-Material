@@ -75,4 +75,16 @@
 
 - Docker Compose for Running Tests:
     - Add a 2nd service to the docker-compose file
-    
+
+- Shortcomings on Testing
+    - If you use the docker-compose method for testing, you won't be able to manipulate the test suite (p, t, q)
+    - To get around it, you can docker exec -it <container_id> sh and list the processes by using ps
+    - You should use the 2 methods for executing tests as necessary, neither are 100% ideal
+
+- Nginx
+    - A popular server for production servers
+    - We'll be adding another Dockerfile for this.
+
+- Multi-Step Docker Builds
+    - Can use 2 different base images, in this case, 1 for node:alpine and 1 for Nginx
+    - Check the Dockerfile file for details
