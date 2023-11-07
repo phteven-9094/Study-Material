@@ -9,5 +9,6 @@ RUN npm run build
 
 #For the Run phase:
 FROM nginx 
+EXPOSE 80
 COPY --from=builder /app/build /usr/share/nginx/html 
 # We got the /usr/share/nginx/html directory from the Nginx repo on Dockerhub

@@ -33,3 +33,24 @@ Travis CI
         - Tell Travis how to run our test suite
         - Tell Travis how to deploy our code to AWS
         - We'll be making changes to the React app under "Creating a Production-Grade Workflow"
+
+AWS Elastic Beanstalk
+    - In AWS Management Console, under Elastic Beanstalk > Create New Application
+    - Create an environment
+        - Select environment - in this case, web server
+    - Under Base Config
+        - Platform = Docker
+        - Sample App is fine for now
+
+Travis Config for Deployment
+    - See the .travis.yml file in the React App
+    - The region will be where you created the Elastic Beanstalk environment
+    - The app will be what you named the app
+    - The env will be what you named the environment on creation
+    - bucket_name will be the name of the S3 bucket that EBS created automatically. You would have to find it within the AWS management console.
+    - bucket_path will also be what you named the app
+    - The "on" section is telling Travis to only deploy if the master branch is updated
+    - You will need to create environment variables on the Travis CI site
+
+Exposing Ports through the Dockerfile
+    - Add the EXPOSE command to the Dockerfile
