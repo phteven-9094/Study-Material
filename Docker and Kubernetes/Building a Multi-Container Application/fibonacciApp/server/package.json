@@ -4,10 +4,11 @@
         "pg": "8.0.3",
         "redis": ">=3.1.1",
         "cors": "2.8.4",
-        "nodemon": "1.18.3"
+        "nodemon": "1.18.3",
+        "body-parser": "*"
     },
     "scripts": {
-        "dev": "nodemon",
-        "start": "node index.js"
+        "dev": "NODE_ENV=development nodemon",
+        "start": "NODE_ENV=production node index.js"
     }
 }
