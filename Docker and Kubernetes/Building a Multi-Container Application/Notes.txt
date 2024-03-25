@@ -1,3 +1,0 @@
- - Application
-    - Overly complicated Fibonacci Sequence generator
-    - The real purpose is to use a multi-container deployment

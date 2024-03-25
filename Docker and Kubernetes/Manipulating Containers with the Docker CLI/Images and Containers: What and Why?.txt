@@ -1,8 +1,0 @@
-- Images
-    - Templates/Blueprints for Containers
-    - Contains code and required tools/runtimes
-    - Can use one image to create multiple containers
-    - Can use an existing, pre-built image or custom build an image.
-- Containers
-    - Small packages that contain your application and the entire environment to run that application.
-    - The running unit of software

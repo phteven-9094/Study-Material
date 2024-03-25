@@ -1,4 +1,0 @@
- - Once a docker container is build and run, if it requires input from a user (for example, a python app that asks for the user to enter a min or max number), you need to run the container in Interactive Mode.
- - This can be done with -i, --interactive
-    - This keeps STDIN open even if not attached
-    - Usually this is combined with -t, --tty which allocates a pseduo-TTY (terminal)

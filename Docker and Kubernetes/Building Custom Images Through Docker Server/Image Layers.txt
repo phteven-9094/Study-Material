@@ -1,3 +1,0 @@
-- Dockerfiles contain instructions which are executed when an image is built ( docker build . ),
-    - Every instruction then creates a layer in the image. 
-    - Layers are used to efficiently rebuild and share images.
